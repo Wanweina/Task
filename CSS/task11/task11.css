@@ -1,0 +1,103 @@
+.mar0 {
+  margin: 0 auto;
+}
+.wid100 {
+  width: 100%;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+body {
+  margin: 0 auto;
+  background-color: lavender;
+  min-width: 320px;
+}
+.page {
+  margin: 0 auto;
+  width: 100%;
+}
+.header {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #5fc0cd;
+  padding: 7px 0;
+  height: 2.5em;
+  position: fixed;
+  line-height: 2.5em;
+  min-width: 320px;
+}
+.header_left {
+  float: left;
+  font-size: 1.4em;
+  color: white;
+  text-align: left;
+  width: 20%;
+  margin-left: 2%;
+}
+.header_middle {
+  float: left;
+  font-size: 1.6em;
+  color: white;
+  width: 55%;
+  text-align: center;
+}
+.header_right {
+  float: right;
+  font-size: 1.4em;
+  color: white;
+  width: 20%;
+  text-align: right;
+  margin-right: 2%;
+}
+.content {
+  padding-top: 3.5em;
+}
+.inform {
+  width: 100%;
+  padding: 3% 0;
+  background-color: white;
+  align-items: center;
+  display: flex;
+  margin-top: 8px;
+}
+.inform img {
+  width: 40px;
+  height: 40px;
+  margin: 0 3%;
+}
+.inform i {
+  width: 2px;
+  height: 35px;
+  background-color: lavender;
+}
+.inform input {
+  width: 70%;
+  font-size: 1.5em;
+  border: none;
+  margin-left: 5%;
+}
+.login {
+  width: 100%;
+  align-items: center;
+  margin-top: 40px;
+}
+.login_button {
+  width: 100%;
+  color: white;
+  padding: 3% 0;
+  background-color: #5fc0cd;
+  font-size: 1.5em;
+  border: 1px solid #cccccc;
+  cursor: pointer;
+}
+.login a {
+  text-decoration: none;
+  font-size: 1.3em;
+  color: #5fc0cd;
+}
+.login_forget {
+  text-align: right;
+}

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="css/task14-1.css">
+    <link rel="stylesheet" href="css/base.css">
+    <title>修真院首页</title>
+</head>
+<body>
+<div class="header">
+    <!--页面顶部客服热线、第三方图标-->
+    <span class="header-left">
+        客服热线：010-594-78634
+    </span>
+    <span class="header-right">
+        <a href="#" class="header-right-img1"></a>
+        <a href="#" class="header-right-img2"></a>
+        <a href="#" class="header-right-img3"></a>
+    </span>
+</div>
+<div class="nav">
+    <!--页面顶部导航栏-->
+    <div class="nav-logo">
+        <img src="img/task14-logo.png">
+    </div>
+    <div class="nav-right">
+        <button class="nav-right-btn" onclick="change()">
+            <img src="img/task14-menu.png">
+        </button>
+        <ul>
+            <li><a href="task14-1.html" style="border-bottom: 4px solid white;">首页</a></li>
+            <li><a href="task14-2.html">职业</a></li>
+            <li><a href="task14-3.html">推荐</a></li>
+            <li><a href="#">关于</a></li>
+        </ul>
+    </div>
+</div>
+<ul class="nav-list" id="change">
+    <!--屏幕缩小时点击按钮出来的链接框-->
+    <li><a href="task14-1.html" style="border-bottom: 1px solid white;">首页</a></li>
+    <li><a href="task14-2.html">职业</a></li>
+    <li><a href="task14-3.html">推荐</a></li>
+    <li><a href="#">关于</a></li>
+</ul>
+<script>
+    //    屏幕缩小后按钮点击事件
+    function change() {
+        var list = document.getElementById("change");
+        if (list.style.display == 'block') {
+            list.style.display = 'none';
+        } else {
+            list.style.display = 'block';
+        }
+    }
+</script>
+
+<div class="container">
+    <!--轮播图-->
+    <ul>
+        <li class="banner1">
+            <img src="img/task14-1-banner1.png">
+        </li>
+        <li class="banner2">
+            <img src="img/task14-1-banner2.jpg">
+        </li>
+        <li class="banner3">
+            <img src="img/task14-1-banner3.jpg">
+        </li>
+    </ul>
+    <!--轮播图控制按钮-->
+    <a href="#" class="container-prev"></a>
+    <a href="#" class="container-next"></a>
+    <ul class="banner-circle">
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+
+<div class="content">
+    <!--页面中部主要介绍部分：优势、学习流程、学员展示、合作企业-->
+    <div class="content-advantage">
+        <!--修真院的优势部分-->
+        <div class="content-advantage-part">
+            <img src="img/task14-1-middle1.png">
+            <p>高效</p>
+            <span>将五到七年的成长时间，缩短到一年到三年。</span>
+        </div>
+        <div class="content-advantage-part">
+            <img src="img/task14-1-middle2.png">
+            <p>规范</p>
+            <span>标准的实战教程，不会走弯路</span>
+        </div>
+        <div class="content-advantage-part">
+            <img src="img/task14-1-middle3.png">
+            <p>人脉</p>
+            <span>同班好友，同院学长，技术大师，入学就混入职脉圈，为以后铺平道路。</span>
+        </div>
+        <div class="content-advantage-right">
+            <img src="img/task14-1-user.png">
+            <p>12400</p>
+            <span>累计在线学习人数</span>
+            <img src="img/task14-1-user.png">
+            <p>12400</p>
+            <span>学员已经找到满意工作</span>
+        </div>
+    </div>
+    <div class="content-learn">
+        <!--学习流程部分-->
+        <p>如何学习</p>
+        <div class="content-learn-part">
+            <div class="content-learn-part-num">1</div>
+            <span>匹配你现在的个人情况 寻找适合自己的岗位</span>
+            <img src="img/task14-1-trainright.png">
+        </div>
+        <div class="content-learn-part">
+            <div class="content-learn-part-num">2</div>
+            <span>了解职业前景薪金待遇、竞争压力等</span>
+            <img src="img/task14-1-trainright.png">
+        </div>
+        <div class="content-learn-part">
+            <div class="content-learn-part-num">3</div>
+            <span>掌握行业内顶级技能</span>
+            <img src="img/task14-1-trainright.png">
+        </div>
+        <div class="content-learn-part">
+            <div class="content-learn-part-num">4</div>
+            <span>查看职业目标任务</span>
+            <img src="img/task14-1-trainright.png">
+        </div>
+        <div class="content-learn-part">
+            <div class="content-learn-part-num">5</div>
+            <span>参考学习资源 ，掌握技能点，逐个完成任务</span>
+            <img src="img/task14-1-trainright.png">
+        </div>
+        <div class="content-learn-part">
+            <div class="content-learn-part-num">6</div>
+            <span>加入班级，和小伙伴们互帮互助，一块学习</span>
+            <img src="img/task14-1-trainright.png">
+        </div>
+        <div class="content-learn-part">
+            <div class="content-learn-part-num">7</div>
+            <span>选择导师，一路引导，加速自己成长</span>
+            <img src="img/task14-1-trainright.png">
+        </div>
+        <div class="content-learn-part">
+            <div class="content-learn-part-num">8</div>
+            <span>完成职业技能，升级业界大牛</span>
+            <img src="img/task14-1-trainright.png" style="opacity: 0">
+        </div>
+    </div>
+    <div class="content-student">
+        <!--优秀学员展示部分-->
+        <p>优秀学员展示</p>
+        <div class="content-student-part">
+            <div class="content-student-part-img student1"></div>
+            <p>技术顾问：罗大佑</p>
+            <span>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。</span>
+        </div>
+        <div class="content-student-part">
+            <div class="content-student-part-img student2"></div>
+            <p>技术顾问：罗大佑</p>
+            <span>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。</span>
+        </div>
+        <div class="content-student-part">
+            <div class="content-student-part-img student3"></div>
+            <p>技术顾问：罗大佑</p>
+            <span>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。</span>
+        </div>
+        <div class="content-student-part">
+            <div class="content-student-part-img student4"></div>
+            <p>技术顾问：罗大佑</p>
+            <span>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。</span>
+        </div>
+        <div class="content-student-part-list">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content-partner">
+        <!--合作企业部分-->
+        <p>战略合作企业</p>
+        <div class="content-partner-part partner1"></div>
+        <div class="content-partner-part partner2"></div>
+        <div class="content-partner-part partner3"></div>
+        <div class="content-partner-part partner4"></div>
+        <div class="content-partner-part partner5"></div>
+
+    </div>
+</div>
+
+<div class="link">
+    <!--友情链接部分-->
+    <p>友情链接</p>
+    <div class="link-part">
+        <ul>
+            <li><a href="#">手机软件</a></li>
+            <li><a href="#">教师招聘</a></li>
+            <li><a href="#">找工作</a></li>
+            <li><a href="#">教师招聘</a></li>
+            <li><a href="#">找工作</a></li>
+            <li><a href="#">手机软件</a></li>
+            <li><a href="#">教师招聘</a></li>
+            <li><a href="#">找工作</a></li>
+            <li><a href="#">教师招聘</a></li>
+            <li><a href="#">找工作</a></li>
+            <li><a href="#">手机软件</a></li>
+            <li><a href="#">教师招聘</a></li>
+            <li><a href="#">找工作</a></li>
+            <li><a href="#">教师招聘</a></li>
+            <li><a href="#">找工作</a></li>
+            <li><a href="#">手机软件</a></li>
+            <li><a href="#">教师招聘</a></li>
+            <li><a href="#">找工作</a></li>
+            <li><a href="#">教师招聘</a></li>
+            <li><a href="#">找工作</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="footer">
+    <!--页面底部链接等-->
+    <div class="footer-left">
+        <p>技能树 &mdash; 改变你我</p>
+        <br><br><br>
+        <a href="#">关于我们</a>&nbsp;|&nbsp;<a href="#">联系我们</a>&nbsp;|&nbsp;<a href="#">合作企业</a>
+    </div>
+    <div class="footer-center">
+        <p>旗下网站</p>
+        <a href="#">草船云孵化器</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#">最强IT特训营</a><br>
+        <a href="#">葡萄藤轻游戏</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#">桌游精灵</a>
+    </div>
+    <div class="footer-right">
+        <p>微信公众平台</p>
+        <img src="img/task14-1-footer.png">
+    </div>
+</div>
+
+<div class="copyright">
+    <!--页面底部的copyright-->
+    Copyright &copy; 2015技能树 www.jnshu.com All Rights Reserved | 京ICP备13005880号
+</div>
+</body>
+</html>

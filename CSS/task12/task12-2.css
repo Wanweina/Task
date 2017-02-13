@@ -1,0 +1,204 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 微软雅黑;
+}
+
+.page {
+    margin: 0 auto;
+    max-width: 640px;
+    min-width: 320px;
+}
+
+/*顶部固定导航栏和分组样式*/
+.header {
+    position: fixed;
+    top: 0;
+    margin: 0 auto;
+    max-width: 640px;
+    min-width: 320px;
+    width: 100%;
+}
+
+/*顶部导航栏*/
+.header-nav {
+    width: 100%;
+    height: 4rem;
+    background-color: #5fc0cd;
+}
+
+.header-nav-middle {
+    width: 100%;
+    text-align: center;
+}
+
+.header-nav-middle button {
+    margin-top: 0.7rem;
+    width: 5.5rem;
+    height: 2.6rem;
+    line-height: 2.6rem;
+    font-size: 20px;
+    color: white;
+    background-color: #55a8b3;
+    border-radius: 6px;
+    border: none;
+}
+
+.btn-white {
+    color: #5fc0cd !important;
+    background-color: white !important;
+    margin-left: -10px;
+}
+
+.header-nav img {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 1.9rem;
+    height: 2rem;
+}
+
+/*分组样式*/
+.header-group {
+    padding: 1rem 0;
+    width: 100%;
+    color: #999;
+    font-size: 18px;
+    border-bottom: 1px solid #e1e5e7;
+    background-color: white;
+}
+
+.header-group-type {
+    position: relative;
+    display: inline-block;
+    width: 32%;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    border-right: 1px solid #e1e5e7;
+}
+
+.triangle-down {
+    position: absolute;
+    top: .8rem;
+    right: .5rem;
+    border-width: .45rem;
+    border-radius: 4px;
+    border-color: #afbac0 transparent transparent transparent;
+    border-style: solid;
+}
+
+/*中间列表样式*/
+.content {
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+}
+
+.content-list {
+    padding: 1rem 2%;
+    font-size: 18px;
+    border-bottom: 1px solid #e1e5e7;
+}
+
+.content-list img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    width: 16px;
+    height: 18px;
+}
+
+.list-1 {
+    color: #afbac0;
+}
+
+.list-1 span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.list-2 {
+    margin: 2% 0 2% 23px;
+    color: #333333;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 375px) {
+    /*屏幕宽度小于375px时样式改变*/
+    .list-2 {
+        margin: 2% 0 2% 5%;
+        font-size: 16px;
+    }
+
+    .list-2 a img {
+        width: 8px;
+        height: 10px;
+    }
+
+    .triangle-down {
+        right: 2px;
+    }
+}
+
+.list-2 a {
+    float: right;
+    margin-left: 15px;
+}
+
+.list-2 a img {
+    width: 0.9em;
+    height: 1.3em
+}
+
+.list-2 span {
+    color: red;
+    float: right;
+}
+
+.list-3 {
+    color: #afbac0;
+}
+
+/*底部固定按钮导航*/
+.footer {
+    position: fixed;
+    bottom: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 5rem;
+    max-width: 640px;
+    min-width: 320px;
+    color: #999;
+    background-color: #f8fafb;
+    border-top: 1px solid #e2eaec;
+}
+
+.footer-class {
+    /*footer的通用属性*/
+    float: left;
+    margin-top: 1%;
+    margin-left: 12%;
+    padding: 1.5%;
+    width: 15%;
+    text-align: center;
+}
+
+.footer-class img {
+    margin-bottom: .2rem;
+    width: 2.3rem;
+    height: 2.1rem;
+}
+
+.blue {
+    color: #5fc0cd;
+}
+
+.footer-middle {
+    margin-left: 10%;
+    padding: 0;
+}
+
+.footer-middle img {
+    width: 4.5rem;
+    height: 4.5rem;
+}

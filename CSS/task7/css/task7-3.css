@@ -1,0 +1,151 @@
+body {
+    margin: 0 auto;
+    font-family: 微软雅黑;
+}
+
+.page {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+    min-width: 330px;
+    max-width: 640px;
+    background-color: #29bde0;
+}
+
+/*顶部导航栏样式*/
+
+.header {
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+}
+
+.header-left {
+    position: absolute;
+    top: 1.5%;
+    left: 0;
+    overflow: hidden;
+    width: 15%;
+}
+
+.header-left img {
+    width: 2.4rem;
+    height: 2rem;
+}
+
+.header-center {
+    padding: 3.5% 0;
+    width: 100%;
+    font-size: 1.5rem;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.header-right {
+    position: absolute;
+    top: 1.5%;
+    right: 0;
+    overflow: hidden;
+    width: 15%;
+}
+
+.header-right img {
+    width: 2.2rem;
+    height: 2.2rem;
+}
+
+/*页面主要内容部分样式*/
+.main {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.main-top {
+    margin: 0 auto;
+    padding: 5% 0 6% 0;
+    width: 100%;
+    text-align: center;
+}
+
+.main-top img {
+    width: 15rem;
+    height: 9rem;
+}
+
+.main-top p {
+    margin: 0 auto;
+    padding: 0 12%;
+    text-align: left;
+    font-size: 1.2rem;
+    color: #ffc865;
+    font-weight: bold;
+}
+
+.main-middle {
+    margin: 0 auto 3% auto;
+    padding: 0 0 0 12%;
+    text-align: left;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.main-middle p {
+    margin: 1%;
+}
+
+.main-bottom {
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 24%;
+    background-color: white;
+}
+
+.main-bottom-day {
+    padding: 0 4% 0 12%;
+    padding-bottom: 4%;
+    border-bottom: 1px solid #dddddd;
+}
+
+.main-bottom-day h3 {
+    display: inline-block;
+    margin: 2% 0;
+    width: 70%;
+    font-size: 1.15rem;
+}
+
+.main-bottom-day span {
+    font-size: 1rem;
+    color: #cecece;
+    text-align: right;
+}
+
+.main-bottom-day p {
+    margin: 0 auto;
+    color: #b1b1b1;
+    font-size: 1rem;
+}
+
+/*页面底部样式*/
+.footer {
+    position: fixed;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+    min-width: 330px;
+    max-width: 640px;
+    text-align: center;
+    background: rgba(41, 189, 224, 0.5);
+}
+
+.footer button {
+    margin: 3.5%;
+    padding: 3%;
+    width: 40%;
+    font-size: 1.4rem;
+    color: white;
+    border-radius: .5rem;
+    border: none;
+    cursor: pointer;
+}

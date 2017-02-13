@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-width: 320px;
+    font-family: 微软雅黑;
+}
+
+@media screen and (max-width: 768px) {
+    .header-nav-right {
+        width: 100%;
+    }
+
+    .header-nav-right ul li a {
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+/*顶部样式*/
+.header {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.header-top {
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0.3% 12% 0.3% 9%;
+    height: 2.6rem;
+    line-height: 2.6rem;
+}
+
+.header-top span {
+    display: inline-block;
+    width: 50%;
+    color: #29b078;
+    font-size: 0.8rem;
+}
+
+.header-top-right {
+    display: inline-block;
+    float: right;
+    margin-top: 0.15%;
+    margin-right: 0;
+    width: 50%;
+    text-align: right;
+}
+
+.header-top-right a {
+    margin-top: 5%;
+    padding: 7px 15px;
+    background-repeat: no-repeat;
+    background-image: url("../img/task8-1-header.png");
+}
+
+.header-top-right-img1 {
+    background-position: 0 0;
+}
+
+.header-top-right-img2 {
+    background-position: 47% 0;
+}
+
+.header-top-right-img3 {
+    background-position: 98% 0;
+}
+
+/*导航栏*/
+.header-nav {
+    overflow: hidden;
+    margin: 0;
+    padding: 0 8%;
+    width: 100%;
+    vertical-align: middle;
+    color: white;
+    border: none;
+    background-color: #29b078;
+}
+
+.header-nav-right ul li a {
+    padding: 1.9rem 1.6rem 1.9rem 1.6rem;
+    width: 6rem;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.header-nav-right a:hover {
+    border-bottom: 3px solid white;
+    text-decoration: none;
+}
+
+.header-nav-left img {
+    display: inline-block;
+    width: 10rem;
+    height: 100%;
+}
+
+
+/*中间部分的样式*/
+.main {
+    margin: 0 auto;
+    width: 100%;
+    background-color: #fafafa;
+}
+
+/*轮播图*/
+.item img {
+    width: 100%;
+}
+
+#carousel-example-generic {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.main-middle {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 85%;
+}
+
+/*页面的底部信息栏*/
+.footer {
+    overflow: hidden;
+    padding: 2% 10% 1% 10%;
+    width: 100%;
+    color: white;
+    background-color: #26a26f;
+}
+
+.footer a {
+    font-size: 1.3rem;
+    color: white;
+}
+
+.footer-center a {
+    display: inline-block;
+    margin-top: 3%;
+}
+
+.footer-right img {
+    width: 7rem;
+    height: 7rem;
+}
+
+.footer-bot {
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 5px;
+    background-color: #26a26f;
+    border-top: 1px solid #32c086;
+}
+

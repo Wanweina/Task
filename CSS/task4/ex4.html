@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>网页登录界面</title>
+    <style>
+        body {
+            margin: 0;
+            min-width: 320px;
+            background-color: lavender;
+        }
+
+        .page {
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .header {
+            position: fixed;
+            margin: 0;
+            padding: 7px 0;
+            width: 100%;
+            height: 2.5em;
+            min-width: 320px;
+            line-height: 2.5em;
+            background-color: #5fc0cd;
+        }
+
+        .header_left {
+            float: left;
+            margin-left: 2%;
+            width: 20%;
+            text-align: left;
+            font-size: 1.4em;
+            color: white;
+        }
+
+        .header_middle {
+            float: left;
+            width: 55%;
+            text-align: center;
+            font-size: 1.6em;
+            color: white;
+        }
+
+        .header_right {
+            float: right;
+            margin-right: 2%;
+            width: 20%;
+            text-align: right;
+            font-size: 1.4em;
+            color: white;
+        }
+
+        .content {
+            padding-top: 3.5em;
+        }
+
+        .inform {
+            display: flex;
+            margin-top: 8px;
+            padding: 3% 0;
+            width: 100%;
+            align-items: center;
+            background-color: white;
+        }
+
+        .inform img {
+            margin: 0 3%;
+            width: 40px;
+            height: 40px;
+        }
+
+        .inform i {
+            width: 2px;
+            height: 35px;
+            background-color: lavender;
+        }
+
+        .inform input {
+            margin-left: 5%;
+            width: 70%;
+            font-size: 1.5em;
+            border: none;
+        }
+
+        .login {
+            margin-top: 40px;
+            width: 100%;
+            align-items: center;
+        }
+
+        .login_button {
+            padding: 3% 0;
+            width: 100%;
+            font-size: 1.5em;
+            color: white;
+            background-color: #5fc0cd;
+            border: 1px solid #cccccc;
+            cursor: pointer;
+        }
+
+        .login a {
+            font-size: 1.3em;
+            color: #5fc0cd;
+            text-decoration: none;
+        }
+
+        .login_forget {
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+<div class="page">
+    <div class="header">
+        <div class="header_left">
+            关闭
+        </div>
+        <div class="header_middle">
+            登录
+        </div>
+        <div class="header_right">
+            注册
+        </div>
+        <div style="clear: both"></div>
+    </div>
+    <div class="content">
+        <div class="inform">
+            <img src="img/phone.png">
+            <i></i>
+            <input type="text" placeholder="请输入手机号">
+        </div>
+        <div class="inform">
+            <img src="img/lock.png">
+            <i></i>
+            <input type="text" placeholder="请输入密码">
+        </div>
+    </div>
+    <div class="login">
+        <input type="button" value="登 录" class="login_button">
+        <a href="#"><p class="login_forget">忘记密码？</p></a>
+    </div>
+</div>
+</body>
+</html>

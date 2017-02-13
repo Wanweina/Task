@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="css/base.css">
+    <title>修真院顶部+底部组件</title>
+</head>
+<body>
+<div class="header">
+    <!--页面顶部客服热线、第三方图标-->
+    <span class="header-left">
+        客服热线：010-594-78634
+    </span>
+    <span class="header-right">
+        <a href="#" class="header-right-img1"></a>
+        <a href="#" class="header-right-img2"></a>
+        <a href="#" class="header-right-img3"></a>
+    </span>
+</div>
+
+<div class="nav">
+    <!--页面顶部导航栏-->
+    <div class="nav-logo">
+        <img src="img/task14-logo.png">
+    </div>
+    <div class="nav-right">
+        <button class="nav-right-btn" onclick="change()">
+            <img src="img/task14-menu.png">
+        </button>
+        <ul>
+            <li><a href="task14-1.html">首页</a></li>
+            <li><a href="task14-2.html">职业</a></li>
+            <li><a href="task14-3.html">推荐</a></li>
+            <li><a href="#">关于</a></li>
+        </ul>
+    </div>
+</div>
+<ul class="nav-list" id="change">
+    <!--屏幕缩小时点击按钮出来的链接框-->
+    <li><a href="task14-1.html">首页</a></li>
+    <li><a href="task14-2.html">职业</a></li>
+    <li><a href="task14-3.html">推荐</a></li>
+    <li><a href="#">关于</a></li>
+</ul>
+<script>
+    //    屏幕缩小后按钮点击事件
+    function change() {
+        var list = document.getElementById("change");
+        if (list.style.display == 'block') {
+            list.style.display = 'none';
+        } else {
+            list.style.display = 'block';
+        }
+    }
+</script>
+
+
+<div class="footer">
+    <!--页面底部链接等-->
+    <div class="footer-left">
+        <p>技能树 &mdash; 改变你我</p>
+        <br><br><br>
+        <a href="#">关于我们</a>&nbsp;|&nbsp;<a href="#">联系我们</a>&nbsp;|&nbsp;<a href="#">合作企业</a>
+    </div>
+    <div class="footer-center">
+        <p>旗下网站</p>
+        <a href="#">草船云孵化器</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#">最强IT特训营</a><br>
+        <a href="#">葡萄藤轻游戏</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#">桌游精灵</a>
+    </div>
+    <div class="footer-right">
+        <p>微信公众平台</p>
+        <img src="img/task14-1-footer.png">
+    </div>
+</div>
+
+<div class="copyright">
+    <!--页面底部的copyright-->
+    Copyright &copy; 2015技能树 www.jnshu.com All Rights Reserved | 京ICP备13005880号
+</div>
+</body>
+</html>

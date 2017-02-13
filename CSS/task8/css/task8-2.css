@@ -1,0 +1,252 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-width: 320px;
+    font-family: 微软雅黑;
+}
+
+@media screen and (max-width: 768px) {
+    .header-nav-right {
+        width: 100%;
+    }
+
+    .header-nav-right ul li a {
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+/*顶部样式*/
+.header {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.header-top {
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0.3% 12% 0.3% 9%;
+    height: 2.6rem;
+    line-height: 2.6rem;
+}
+
+.header-top span {
+    display: inline-block;
+    width: 50%;
+    color: #29b078;
+    font-size: 0.8rem;
+}
+
+.header-top-right {
+    display: inline-block;
+    float: right;
+    margin-right: 0;
+    margin-top: 0.15%;
+    width: 50%;
+    text-align: right;
+}
+
+.header-top-right a {
+    margin-top: 5%;
+    padding: 7px 15px;
+    background-repeat: no-repeat;
+    background-image: url("../img/task8-1-header.png");
+}
+
+.header-top-right-img1 {
+    background-position: 0 0;
+}
+
+.header-top-right-img2 {
+    background-position: 47% 0;
+}
+
+.header-top-right-img3 {
+    background-position: 98% 0;
+}
+
+/*导航栏*/
+.header-nav {
+    overflow: hidden;
+    margin: 0;
+    padding: 0 8%;
+    width: 100%;
+    vertical-align: middle;
+    color: white;
+    border: none;
+    background-color: #29b078;
+}
+
+.header-nav-right ul li a {
+    padding: 1.9rem 1.6rem 1.9rem 1.6rem;
+    width: 6rem;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.header-nav-right a:hover {
+    border-bottom: 3px solid white;
+    text-decoration: none;
+}
+
+.header-nav-left img {
+    display: inline-block;
+    width: 10rem;
+    height: 100%;
+}
+
+/*中间部分的样式*/
+.main {
+    margin: 0 auto;
+    width: 100%;
+    background-color: #fafafa;
+}
+
+.main-top {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.main-top img {
+    width: 100%;
+}
+
+.main-content {
+    margin: 0 auto;
+    padding: 0 0 10% 0;
+    width: 70%;
+    background-color: #fafafa;
+}
+
+.main-content a {
+    color: black;
+}
+
+.main-content p {
+    margin: 2rem auto;
+}
+
+/*中间左侧的内容*/
+.main-content-left {
+    margin-bottom: 5%;
+    padding: 0;
+    background-color: #ffffff;
+    border: 1px solid #e6e6e6;
+}
+
+.main-content-left p {
+    margin: 0 auto;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.main-content-left-list {
+    width: 100%;
+}
+
+.main-content-left-list ul {
+    margin: 2rem auto;
+    width: 10rem;
+}
+
+.main-content-left-list ul li {
+    margin: 2.5rem auto;
+    list-style-image: url("../img/task8-2-list-kong.png");
+}
+
+.main-content-left-list ul li a {
+    color: #26a26f;
+}
+
+.list-active {
+    margin: 2.5rem auto;
+    list-style-image: url("../img/task8-2-list-shi.png") !important;
+}
+
+.list-active a {
+    color: #f9a372 !important;
+}
+
+/*中间右侧的企业详情*/
+.main-content-right {
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+.main-content-right-con {
+    padding: 0 0 10% 0;
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #e6e6e6;
+}
+
+.main-content-right-top {
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 2% 10%;
+    width: 100%;
+    color: #b5b5b5;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.main-content-right-top img {
+    float: left;
+    width: 20%;
+}
+
+.main-content-right-top span {
+    float: left;
+    margin-left: 5%;
+    width: 75%;
+    height: 100%;
+}
+
+.main-content-right p {
+    margin: 5% auto;
+    width: 78%;
+    color: #b5b5b5;
+    text-indent: 2em;
+}
+
+/*页面的底部信息栏*/
+.footer {
+    overflow: hidden;
+    padding: 2% 10% 1% 10%;
+    width: 100%;
+    background-color: #26a26f;
+    color: white;
+}
+
+.footer a {
+    font-size: 1.3rem;
+    color: white;
+}
+
+.footer-center a {
+    display: inline-block;
+    margin-top: 3%;
+}
+
+.footer-right img {
+    width: 7rem;
+    height: 7rem;
+}
+
+.footer-bot {
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 5px;
+    background-color: #26a26f;
+    border-top: 1px solid #32c086;
+}
+

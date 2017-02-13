@@ -1,0 +1,107 @@
+
+.header {
+    background-color: #29bde0;
+}
+
+/*页面主要内容部分样式*/
+.content {
+    padding: 4%;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+}
+
+.content-top {
+    position: relative;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #c9c9c9;
+}
+
+.content-top h2 {
+    font-weight: 100;
+    color: #9a9a9a;
+}
+
+.content-top img {
+    position: absolute;
+    top: 35%;
+    right: 2%;
+    width: 1em;
+    height: 1.8em;
+}
+
+.content-main {
+    position: relative;
+    margin: 4% auto;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #c9c9c9;
+}
+
+.content-main-game {
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #fdd793;
+}
+
+.content-main-game h2 {
+    font-weight: 100;
+    color: #fbb435;
+}
+
+.content-main-version {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.content-main-version-btn {
+    margin: 5% auto 4% auto;
+    padding: 8% 1%;
+    width: 80%;
+    color: white;
+    font-size: 1.3em;
+    background-color: #69d1e9;
+}
+
+.content-main-version span {
+    color: #9a9a9a;
+}
+
+.triangle {
+    position: absolute;
+    top: 49%;
+    right: 1.5%;
+    width: 0;
+    height: 0;
+    border-width: 1.2rem 0 1.2rem 1.2rem;
+    border-style: solid;
+    border-color: transparent transparent transparent #fbb435;
+}
+
+.content-footer {
+    margin: 0 auto 2% auto;
+    overflow: hidden;
+    width: 10em;
+}
+
+.content-footer ul li {
+    display: block;
+    float: left;
+    margin-left: 3%;
+    width: 12px;
+    height: 12px;
+    list-style-type: none;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.content-footer ul li:hover {
+    background-color: #69d1e9;
+}

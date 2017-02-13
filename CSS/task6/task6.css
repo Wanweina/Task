@@ -1,0 +1,76 @@
+.page {
+    margin: 0 auto;
+    max-width: 640px;
+    min-width: 320px;
+    font-family: 微软雅黑;
+}
+
+.header {
+    display: inline-block;
+    margin: 0 auto;
+    width: 88%;
+    height: 60px;
+    text-align: center;
+}
+
+.header button {
+    display: inline;
+    margin-top: 6px;
+    padding: 10px;
+    width: 100px;
+    height: 50px;
+    font-size: 1.2em;
+    border-radius: .5em;
+    border: none;
+    background-color: #55a8b3;
+}
+
+.list-1 {
+    color: #afbac0;
+    font-size: 1.3em;
+}
+
+.list-2 {
+    margin: 2% 0 2% 1.4em;
+    font-size: 1.15em;
+    color: #333333;
+}
+
+.list-3 {
+    color: #afbac0;
+    font-size: 1.2em;
+}
+
+.list-group img {
+    margin-right: 2%;
+    margin-top: -1%;
+    width: 1.1em;
+    height: 1.2em;
+}
+
+.bottom-home {
+    display: inline-block;
+    float: left;
+    margin-left: 15%;
+    padding: 2%;
+    width: 15%;
+    color: #5fc0cd;
+}
+
+.bottom-write {
+    display: inline-block;
+    float: left;
+    margin-left: 15%;
+    margin-top: 1%;
+    width: 15%;
+}
+
+.bottom-mine {
+    display: inline-block;
+    float: left;
+    margin-left: 15%;
+    margin-top: 0;
+    padding: 2%;
+    width: 15%;
+    height: 20%;
+}

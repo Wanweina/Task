@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    word-break: break-all;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+
+body {
+    min-width: 320px;
+    font-family: 微软雅黑;
+}
+
+/*页面头部登录注册、导航栏*/
+.header {
+    width: 100%;
+}
+
+.header-top {
+    overflow: hidden;
+    padding: 0 7.5%;
+    height: 39px;
+    color: white;
+    background-color: #1376dc;
+}
+
+.header-top-left {
+    padding: 0;
+    font-size: 12px;
+    line-height: 39px;
+    text-align: left;
+}
+
+.header-top-right {
+    padding: 0;
+    text-align: right;
+}
+
+.header-top-right a {
+    display: inline-block;
+    width: 54px;
+    height: 39px;
+    line-height: 39px;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    border-left: 1px solid white;
+}
+
+.header-top-right a:hover {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
+
+.header-nav {
+    overflow: hidden;
+    padding: 0 7.5%;
+    background-color: #f9f9f9;
+}
+
+.header-nav ul {
+    float: right;
+}
+
+.header-nav ul li {
+    display: inline-block;
+    float: left;
+}
+
+.header-nav ul li a {
+    display: inline-block;
+    margin: 29px 0 29px 59px;
+    padding: 15px 18px;
+    height: 49px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 16px;
+    color: #313131;
+    background-color: white;
+    border-right: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e8e8e8;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.header-nav ul li a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #1d7ad9;
+}
+
+/*页面中间主页部分，包括流程示意图、表单*/
+.main {
+    overflow: hidden;
+    margin-bottom: 50px;
+    padding: 0 7.5%;
+    font-size: 16px;
+    color: #666666;
+    background-color: white;
+}
+
+.main-top-step {
+    font-size: 0;
+}
+
+.main-top-step-part {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    width: 25%;
+    height: 100px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.main-top-step-part-circle {
+    position: relative;
+    z-index: 99999;
+    display: inline-block;
+    margin-top: 39px;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    background-color: #cccccc;
+    border-radius: 50%;
+}
+
+.main-top-step-part-line {
+    position: absolute;
+    top: 48%;
+    width: 100%;
+    height: 5px;
+    background-color: #cccccc;
+}
+
+.main-top-step-part-word {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.main-p {
+    margin-top: 50px;
+    margin-bottom: 15px;
+    padding-left: 8px;
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+    color: #333333;
+    border-left: 4px solid #1d7ad9;
+}
+
+/*主要内容的表单部分*/
+.main-form p {
+    margin: 0;
+    padding-left: 15px;
+    height: 44px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #1d7ad9;
+    line-height: 44px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+}
+
+.main-form-p {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.main-form p img {
+    margin-top: -3px;
+    margin-right: 4px;
+}
+
+.main-form-type {
+    margin: 0;
+    padding: 20px 30px 0 20px;
+    background-color: #fbfcff;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.main-form-type-part {
+    text-align: center;
+}
+
+.main-form-type-part label {
+    float: left;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    width: 120px;
+    height: 18px;
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+input[type=radio] {
+    display: none;
+    margin: 4px 0 0;
+    line-height: normal;
+}
+
+input[type=radio] + span {
+    display: inline-block;
+    box-sizing: border-box;
+    margin-right: 5px;
+    margin-bottom: 3px;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    border: 1px solid #d7d7d7;
+    border-radius: 50%;
+}
+
+input[type=radio]:checked + span {
+    border: .6rem solid #1d7ad9;
+}
+
+.main-form-type-select {
+    text-align: center;
+}
+
+.main-form-type-select select {
+    display: inline-block;
+    padding: 10px 45px 10px 25px;
+    color: #999999;
+    font-size: 15px;
+    -webkit-appearance: none;
+    border: 1px solid #e8e8e8;
+    background: url("img/task10_select.png") 95% no-repeat;
+}
+
+.size-text {
+    width: 160px !important;
+}
+
+.box-text {
+    width: 60px;
+    height: 20px;
+    border: 1px solid #ccc;
+}
+
+.main-form-type-part div {
+    width: 100%;
+}
+
+.main-form-btn {
+    padding: 80px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.main-form-btn button {
+    padding: 6px 40px;
+    color: white;
+    font-size: 18px;
+    background-color: #e15053;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+
+/*页面底部链接等*/
+.footer-link {
+    padding: 40px 7.5%;
+    color: #9b9b9b;
+    background-color: #f9f9f9;
+}
+
+.footer-link-left p {
+    font-size: 18px;
+}
+
+.footer-link-center {
+    margin-bottom: 20px;
+    padding: 0 40px;
+}
+
+.footer-link-center ul li {
+    display: inline-block;
+    float: left;
+    margin: 0 40px 27px 0;
+}
+
+.footer-link-center ul li a {
+    font-size: 14px;
+    color: #9b9b9b;
+    cursor: pointer;
+}
+
+.footer-link-center ul li a:hover {
+    text-decoration: none;
+    color: #1d7ad9;
+}
+
+.footer-link-right {
+    position: relative;
+    overflow: hidden;
+    padding-left: 12%;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.footer-link-right span {
+    float: left;
+}
+
+.footer-link-right img {
+    position: absolute;
+    top: 0;
+    display: inline-block;
+    float: left;
+    width: 80px;
+    height: 80px;
+}
+
+.footer-bottom {
+    margin: 0;
+    width: 100%;
+    line-height: 2.5rem;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    background-color: #1d7ad9;
+}

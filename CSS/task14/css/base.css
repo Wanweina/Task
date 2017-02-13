@@ -1,0 +1,264 @@
+html {
+    font-size: 62.6%; /*相当于10px*/
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 300px;
+    font-family: 微软雅黑;
+    font-size: 1.4rem;
+}
+
+/*页面顶部客服热线、第三方图标*/
+.header {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 80%;
+    height: 3rem;
+    line-height: 3rem;
+}
+
+.header-left {
+    float: left;
+    width: 15rem;
+    color: #29b078;
+}
+
+@media screen and (max-width: 380px) {
+    /*屏幕宽度小于380px时左侧客服电话隐藏*/
+    .header-left {
+        display: none;
+    }
+}
+
+.header-right {
+    float: right;
+    width: 10rem;
+}
+
+.header-right a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 1rem 1.3rem;
+    background-repeat: no-repeat;
+    background-image: url("../img/task14-1-header.png");
+}
+
+.header-right-img1 {
+    background-position: 0 0;
+}
+
+.header-right-img2 {
+    background-position: 48% 0;
+}
+
+.header-right-img3 {
+    background-position: 98% 0;
+}
+
+/*页面顶部导航栏*/
+.nav {
+    width: 80%;
+    height: 8rem;
+    padding: 0 10%;
+    background-color: #29b078;
+}
+
+.nav-logo {
+    display: inline-block;
+    width: 10rem;
+}
+
+.nav-logo img {
+    margin-top: 2rem;
+}
+
+.nav-right {
+    position: relative;
+    display: inline-block;
+    float: right;
+    width: 30rem;
+    height: 100%;
+}
+
+.nav-right ul {
+    margin: 0;
+    height: 100%;
+    line-height: 8rem;
+    list-style-type: none;
+}
+
+.nav-right ul li {
+    display: inline-block;
+    text-align: center;
+}
+
+.nav-right ul li a {
+    display: inline-block;
+    width: 6.4rem;
+    height: 7.7rem;
+    font-size: 1.6rem;
+    color: white;
+    letter-spacing: .3rem;
+    text-decoration: none;
+}
+
+.nav-right a:hover {
+    border-bottom: 4px solid white;
+    text-decoration: none;
+}
+
+.nav-right-btn {
+    position: absolute;
+    right: .8rem;
+    top: 1rem;
+    display: none;
+    width: 3.5rem;
+    height: 4rem;
+    background: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav-right-btn:hover {
+    background-color: #9b9b9b;
+    opacity: 0.6;
+}
+
+/*屏幕缩小时点击按钮出来的链接框*/
+.nav-list {
+    display: none;
+    margin: 0;
+    padding: 0;
+    height: 14.3rem;
+    list-style-type: none;
+    border-top: 1px solid #9b9b9b;
+    background-color: #29b078;
+}
+
+.nav-list li {
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.nav-list li a {
+    display: inline-block;
+    width: 100%;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-list a:hover {
+    border-bottom: 1px solid white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+    /*屏幕宽度小于768px时导航栏右侧变成按钮*/
+    .nav {
+        height: 6rem;
+    }
+
+    .nav-logo img {
+        margin-top: 1.1rem;
+    }
+
+    .nav-right {
+        width: 10rem;
+    }
+
+    .nav-right ul {
+        display: none;
+    }
+
+    .nav-right-btn {
+        display: inline-block;
+    }
+
+}
+
+@media screen and (min-width: 800px) {
+    .nav-list {
+        display: none !important;
+    }
+}
+
+/*页面底部链接等*/
+.footer {
+    overflow: hidden;
+    padding: 1.5% 10%;
+    width: 80%;
+    color: white;
+    background-color: #26a26f;
+}
+
+.footer p {
+    margin: 0.5rem auto;
+    font-size: 1.6rem;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-left {
+    display: inline-block;
+    width: 35%;
+}
+
+.footer-center {
+    display: inline-block;
+    width: 45%;
+}
+
+.footer-right {
+    display: inline-block;
+    float: right;
+    width: 10rem;
+}
+
+.footer-center a {
+    display: inline-block;
+    margin-top: 1.5rem;
+}
+
+.footer-right img {
+    width: 8rem;
+    height: 8rem;
+}
+
+@media screen and (max-width: 870px) {
+    .footer-left, .footer-center {
+        width: 48%;
+    }
+
+    .footer-right {
+        margin-top: 1rem;
+        float: left;
+    }
+}
+
+@media screen and (max-width: 640px ) {
+    .footer-left, .footer-center {
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+}
+
+/*页面底部的copyright*/
+.copyright {
+    margin: 0;
+    padding: 5px 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: .5rem;
+    background-color: #26a26f;
+    border-top: 1px solid #32c086;
+}

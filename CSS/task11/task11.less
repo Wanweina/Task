@@ -1,0 +1,121 @@
+.mar0 {
+  margin: 0 auto;
+}
+
+.wid100 {
+  width: 100%;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+body {
+  .mar0;
+  min-width: 320px;
+  background-color: lavender;
+}
+
+.page {
+  .mar0;
+  .wid100;
+}
+
+.header {
+  position: fixed;
+  .mar0;
+  padding: 7px 0;
+  height: 2.5em;
+  min-width: 320px;
+  .wid100;
+  line-height: 2.5em;
+  background-color: #5fc0cd;
+
+}
+
+.header_left {
+  .left;
+  margin-left: 2%;
+  width: 20%;
+  text-align: left;
+  font-size: 1.4em;
+  color: white;
+}
+
+.header_middle {
+  .left;
+  width: 55%;
+  text-align: center;
+  font-size: 1.6em;
+  color: white;
+}
+
+.header_right {
+  .right;
+  margin-right: 2%;
+  width: 20%;
+  text-align: right;
+  font-size: 1.4em;
+  color: white;
+}
+
+.content {
+  padding-top: 3.5em;
+}
+
+.inform {
+  display: flex;
+  margin-top: 8px;
+  padding: 3% 0;
+  .wid100;
+  align-items: center;
+  background-color: white;
+  img {
+    margin: 0 3%;
+    width: 40px;
+    height: 40px;
+  }
+  i {
+    width: 2px;
+    height: 35px;
+    background-color: lavender;
+  }
+  input {
+    margin-left: 5%;
+    width: 70%;
+    font-size: 1.5em;
+    border: none;
+  }
+}
+
+.login {
+  margin-top: 40px;
+  .wid100;
+  align-items: center;
+}
+
+.login_button {
+  padding: 3% 0;
+  .wid100;
+  color: white;
+  font-size: 1.5em;
+  background-color: #5fc0cd;
+  border: 1px solid #cccccc;
+  cursor: pointer;
+}
+
+.login {
+  a {
+    text-decoration: none;
+    font-size: 1.3em;
+    color: #5fc0cd;
+  }
+}
+
+.login_forget {
+  text-align: right;
+}

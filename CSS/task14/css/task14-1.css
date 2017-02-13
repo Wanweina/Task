@@ -1,0 +1,533 @@
+/*轮播图*/
+.container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 30vw;
+    min-height: 7.85rem;
+}
+
+.container ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.banner1, .banner2, .banner3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.banner1 {
+    -webkit-animation: pic1 20s infinite;
+}
+
+.banner2 {
+    -webkit-animation: pic2 20s infinite;
+}
+
+.banner3 {
+    -webkit-animation: pic3 20s infinite;
+}
+
+.container img {
+    width: 100%;
+    border: 0 none;
+    vertical-align: top;
+}
+
+/*轮播图动画控制*/
+@keyframes pic1 {
+    0% {
+        margin-left: 0;
+    }
+    15% {
+        margin-left: 0;
+    }
+    25% {
+        margin-left: -100%;
+    }
+    40% {
+        margin-left: -100%;
+    }
+    50% {
+        margin-left: -200%;
+    }
+    65% {
+        margin-left: -200%;
+    }
+    80% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+
+@keyframes pic2 {
+    0% {
+        margin-left: 100%;
+    }
+    15% {
+        margin-left: 100%;
+    }
+    25% {
+        margin-left: 0;
+    }
+    40% {
+        margin-left: 0;
+    }
+    50% {
+        margin-left: -100%;
+    }
+    65% {
+        margin-left: -100%;
+    }
+    80% {
+        margin-left: 100%;
+    }
+    100% {
+        margin-left: 100%;
+    }
+}
+
+@keyframes pic3 {
+    0% {
+        margin-left: 200%;
+    }
+    15% {
+        margin-left: 200%;
+    }
+    25% {
+        margin-left: 100%;
+    }
+    40% {
+        margin-left: 100%;
+    }
+    50% {
+        margin-left: 0;
+    }
+    65% {
+        margin-left: 0;
+    }
+    80% {
+        margin-left: 200%;
+    }
+    100% {
+        margin-left: 200%;
+    }
+}
+
+/*轮播图控制按钮*/
+.container-prev {
+    position: absolute;
+    top: 45%;
+    left: 6%;
+    display: inline-block;
+    width: 1.3rem;
+    height: 2.1rem;
+    background-image: url("../img/task14-1-prev.png");
+    background-size: 100%;
+}
+
+.container-next {
+    position: absolute;
+    top: 45%;
+    right: 6%;
+    display: inline-block;
+    width: 1.3rem;
+    height: 2.1rem;
+    background-image: url("../img/task14-1-next.png");
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+.banner-circle {
+    position: absolute;
+    bottom: .5rem;
+    left: 48%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.banner-circle li {
+    display: inline-block;
+    width: .8rem;
+    height: .8rem;
+    border-radius: 50%;
+    border: 1px solid #adaab1;
+    cursor: pointer;
+}
+
+.banner-circle li:hover {
+    background-color: #adaab1;
+}
+
+/*页面中部主要介绍部分：优势、学习流程、学员展示、合作企业、友情链接*/
+.content {
+    padding: 0 10% 8% 10%;
+    width: 80%;
+    background-color: #fafafa;
+}
+
+.content p {
+    width: 100%;
+    text-align: center;
+    color: #333;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.content span {
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    color: #999;
+    text-align: left;
+}
+
+/*修真院的优势部分*/
+.content-advantage {
+    padding-top: 10vw;
+}
+
+.content-advantage-part {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 1%;
+    width: 24%;
+    height: 20rem;
+    text-align: center;
+}
+
+.content-advantage-part span {
+    max-width: 16rem;
+}
+
+.content-advantage-right {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -1%;
+    padding-left: 3%;
+    width: 10%;
+    height: 18rem;
+    border-left: 1px dashed #dedede;
+}
+
+.content-advantage-right p {
+    width: 2rem;
+    display: inline-block;
+    color: #29b078;
+}
+
+.content-advantage-right span {
+    margin-top: 1%;
+    width: 15rem;
+}
+
+.content-advantage-right img {
+    margin-bottom: 1.5%;
+    width: 1rem;
+    height: 1rem;
+}
+
+@media screen  and (max-width: 800px) {
+    .content-advantage-part {
+        width: 48%;
+    }
+
+    .content-advantage-right {
+        padding-left: 15%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .content-advantage-part {
+        width: 100%;
+        margin: 0;
+    }
+
+    .content-advantage-right {
+        margin-left: 15%;
+        width: 10rem;
+        border: none;
+    }
+}
+
+/*学习流程部分*/
+
+.content-learn p {
+    margin: 5% auto;
+}
+
+.content-learn-part {
+    display: inline-block;
+    width: 23%;
+    margin-bottom: 5%;
+}
+
+@media screen and (max-width: 1100px) {
+    .content-learn-part {
+        width: 32%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .content-learn {
+        text-align: center;
+    }
+
+    .content-learn-part {
+        width: 49%;
+    }
+
+}
+
+@media screen and (max-width: 520px) {
+    .content-learn {
+        text-align: center;
+    }
+
+    .content-learn-part {
+        width: 100%;
+    }
+
+    .content-learn-part img {
+        display: none !important;
+    }
+}
+
+.content-learn-part span {
+    margin-left: 2%;
+    width: 50%;
+    vertical-align: middle;
+}
+
+.content-learn-part img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.content-learn-part-num {
+    display: inline-block;
+    padding: 1.2rem 1.8rem;
+    color: #29b078;
+    font-weight: bold;
+    font-size: 1.6rem;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 1px solid #ebeaeb;
+    box-shadow: 0 0 5px #ebeaeb;
+}
+
+/*优秀学员展示部分*/
+.content-student {
+    text-align: center;
+}
+
+.content-student-part {
+    display: inline-block;
+    margin-bottom: 1%;
+    width: 24%;
+    background-color: #ffffff;
+    border: 1px solid #ebeaeb;
+    text-align: center;
+    box-shadow: 2px 1px 10px #ebeaeb;
+}
+
+.content-student-part-img {
+    display: inline-block;
+    margin: 10% auto 0 auto;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+}
+
+.student1 {
+    background-image: url("../img/task14-1-student1.png");
+    background-size: 100%;
+}
+
+.student2 {
+    background-image: url("../img/task14-1-student2.png");
+    background-size: 106%;
+}
+
+.student3 {
+    background-image: url("../img/task14-1-student3.png");
+    background-size: 140%;
+    background-position: 55%;
+}
+
+.student4 {
+    background-image: url("../img/task14-1-student4.png");
+    background-size: 140%;
+    background-position: 30% 0;
+}
+
+.content-student-part span {
+    margin-bottom: 10%;
+    width: 85%;
+}
+
+.content-student-part-list {
+    overflow: hidden;
+    margin: 1% auto;
+    width: 10em;
+}
+
+.content-student-part-list ul li {
+    display: block;
+    float: left;
+    margin-left: 3%;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 1px solid #ebeaeb;
+    list-style-type: none;
+    cursor: pointer;
+    box-shadow: 0 0 5px #ebeaeb;
+}
+
+.content-student-part-list ul li:hover {
+    background-color: #29b078;
+}
+
+@media screen and (max-width: 1000px) {
+    .content-student-part {
+        width: 48%;
+        max-width: 30rem;
+    }
+
+    .content-student-part-list {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 520px) {
+    .content-student-part {
+        width: 80%;
+        margin-bottom: 4%;
+    }
+
+    .content-student-part-list {
+        display: none;
+    }
+
+}
+
+/*合作企业部分*/
+.content-partner {
+    margin-top: 10%;
+    width: 100%;
+    text-align: center;
+    font-size: 0;
+}
+
+.content-partner-part {
+    display: inline-block;
+    background-image: url("../img/task14-1-partner.png");
+    padding: 7.5% 10%;
+    background-size: 500%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 720px) {
+    .content-partner-part {
+        display: block;
+        margin: 2% auto;
+        width: 50%;
+        height: 20vw;
+    }
+
+    .partner1 {
+        background-position: 0 !important;
+    }
+
+    .partner2 {
+        background-position: 24% 30% !important;
+    }
+
+    .partner3 {
+        background-position: 50% 30% !important;
+    }
+
+    .partner4 {
+        background-position: 76% 50% !important;
+    }
+
+    .partner5 {
+        background-position: 100% 50% !important;
+    }
+}
+
+.content-partner-part:hover {
+    box-shadow: 2px 1px 5px 5px #999;
+}
+
+.partner1 {
+    background-position: 0 0;
+}
+
+.partner2 {
+    background-position: 24% 0;
+}
+
+.partner3 {
+    background-position: 50% 0;
+}
+
+.partner4 {
+    background-position: 76% 0;
+}
+
+.partner5 {
+    background-position: 100% 0;
+}
+
+/*友情链接部分*/
+
+.link {
+    padding: 1% 10%;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.link p {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    color: #333;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.link-part {
+    overflow: hidden;
+}
+
+.link-part li {
+    float: left;
+    margin: .5rem 5.5rem .5rem -2%;
+    margin-top: 1%;
+    width: 4.8rem;
+    color: #999;
+}
+
+.link-part a {
+    color: #999;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 820px) {
+    .link-part li {
+        margin: .5rem 10%;
+    }
+}

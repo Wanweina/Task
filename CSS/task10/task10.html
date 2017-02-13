@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../../jquery.js"></script>
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="task10.css">
+    <title>51包装网</title>
+</head>
+<body>
+<div class="header container-fluid">
+    <!--页面头部登录注册、导航栏-->
+    <div class="header-top row">
+            <span class="header-top-left col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                客服电话：400-810-9151
+            </span>
+        <div class="header-top-right col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <a href="#">登录</a><a
+                href="#">注册</a>
+        </div>
+    </div>
+    <div class="header-nav row">
+        <div class="header-nav-btn">
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#" style="background-color: #1d7ad9;color: white">在线定制</a></li>
+                <li><a href="#">标准箱</a></li>
+                <li><a href="#">品质保障</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="main">
+    <!--页面中间主页部分，包括流程示意图、表单-->
+    <div class="main-top row">
+        <!--主要内容顶部的流程示意图-->
+        <div class="main-top-step col-sm-12 col-xs-12 col-md-10 col-md-offset-2 col-lg-7 col-lg-offset-5">
+            <div class="main-top-step-part">
+                <div class="main-top-step-part-circle" style="background-color: #ff7f02">1</div>
+                <div class="main-top-step-part-line" style="background-color: #ff7f02;"></div>
+                <div class="main-top-step-part-word" style="color: #ff7f02;">
+                    1.定制纸箱
+                </div>
+            </div>
+            <div class="main-top-step-part">
+                <div class="main-top-step-part-circle">2</div>
+                <div class="main-top-step-part-line"></div>
+                <div class="main-top-step-part-word">
+                    2.选择数量
+                </div>
+            </div>
+            <div class="main-top-step-part">
+                <div class="main-top-step-part-circle">3</div>
+                <div class="main-top-step-part-line"></div>
+                <div class="main-top-step-part-word">
+                    3.上传附件
+                </div>
+            </div>
+            <div class="main-top-step-part">
+                <div class="main-top-step-part-circle">4</div>
+                <div class="main-top-step-part-line"></div>
+                <div class="main-top-step-part-word">
+                    4.确认下单
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="main-p">请您按照以下步骤来定制您的纸箱</p>
+    <div class="main-form">
+        <!--主要内容的表单部分-->
+        <p class="main-form-p">
+            <img src="img/task10-box1.png">
+            选择箱型
+        </p>
+        <div class="main-form-type row">
+            <div class="main-form-type-part col-lg-8 col-md-10 col-sm-12 col-xs-12">
+                <form action="#">
+                    <label for="type-test1">
+                        <input type="radio" name="box-type" id="type-test1">
+                        <span></span>
+                        对口箱
+                    </label>
+                    <label for="type-test2">
+                        <input type="radio" name="box-type" id="type-test2">
+                        <span></span>
+                        飞机盒
+                    </label>
+                    <label for="type-test3">
+                        <input type="radio" name="box-type" id="type-test3">
+                        <span></span>
+                        天地盖
+                    </label>
+                </form>
+            </div>
+            <label class="main-form-type-select col-lg-4 col-md-2 col-sm-12 col-xs-10">
+                <select class="pull-right">
+                    <option value="#">查看详情</option>
+                </select>
+            </label>
+        </div>
+        <p>
+            <img src="img/task10-box2.png">
+            确定尺寸
+        </p>
+        <div class="main-form-type row">
+            <div class="main-form-type-part col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                <form action="#">
+                    <div class="col-lg-12 col-sm-12 col-xs-12 col-md-12">
+                        <label for="size-test1" style="width: 80px">
+                            <input type="radio" name="box-size" id="size-test1">
+                            <span></span>
+                            外径
+                        </label>
+                        <label class="size-text">
+                            长 <input type="text" class="box-text"><span>mm</span>
+                        </label>
+                        <label class="size-text">
+                            宽 <input type="text" class="box-text"><span>mm</span>
+                        </label>
+                        <label class="size-text">
+                            高 <input type="text" class="box-text"><span>mm</span>
+                        </label>
+                    </div>
+                    <div class="col-lg-12 col-sm-12 col-xs-12 col-md-12">
+                        <label for="size-test2" style="width: 80px">
+                            <input type="radio" name="box-size" id="size-test2">
+                            <span></span>
+                            内径
+                        </label>
+                        <label class="size-text">
+                            长 <input type="text" class="box-text"><span>mm</span>
+                        </label>
+                        <label class="size-text">
+                            宽 <input type="text" class="box-text"><span>mm</span>
+                        </label>
+                        <label class="size-text">
+                            高 <input type="text" class="box-text"><span>mm</span>
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <label class="main-form-type-select col-lg-2 col-md-2 col-sm-12 col-xs-10">
+                <select class="pull-right" style="margin-top: 25px">
+                    <option value="#">查看详情</option>
+                </select>
+            </label>
+        </div>
+        <p>
+            <img src="img/task10-box3.png">
+            选择材质
+        </p>
+        <div class="main-form-type row">
+            <div class="main-form-type-part col-lg-11 col-md-11 col-sm-12 col-xs-12">
+                <form action="#">
+                    <label for="material-test1" style="width: 160px;">
+                        <input type="radio" name="box-material" id="material-test1">
+                        <span></span>
+                        三层A瓦优质
+                    </label>
+                    <label for="material-test2" style="width: 160px">
+                        <input type="radio" name="box-material" id="material-test2">
+                        <span></span>
+                        三层A瓦优质
+                    </label>
+                    <label for="material-test3" style="width: 160px">
+                        <input type="radio" name="box-material" id="material-test3">
+                        <span></span>
+                        三层A瓦优质
+                    </label>
+                    <label for="material-test4" style="width: 160px">
+                        <input type="radio" name="box-material" id="material-test4">
+                        <span></span>
+                        三层A瓦优质
+                    </label>
+                    <label for="material-test5" style="width: 160px">
+                        <input type="radio" name="box-material" id="material-test5">
+                        <span></span>
+                        三层A瓦优质
+                    </label>
+                </form>
+            </div>
+            <label class="main-form-type-select col-lg-1 col-md-1 col-sm-12 col-xs-10">
+                <select class="pull-right">
+                    <option value="#">查看详情</option>
+                </select>
+            </label>
+        </div>
+        <div class="main-form-btn">
+            <button>
+                下一步
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <!--页面底部链接等-->
+    <div class="container-fluid">
+        <div class="footer-link row">
+            <div class="footer-link-left col-sm-12 col-xs-12 col-md-6 col-lg-4 ">
+                <p>
+                    51包装网&mdash;纸箱包装首选服务平台
+                </p>
+            </div>
+            <div class="footer-link-center col-sm-12 col-xs-12 col-md-6 col-lg-4 ">
+                <ul>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">配送流程</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">下单指南</a></li>
+                    <li><a href="#">媒体介绍</a></li>
+                </ul>
+            </div>
+            <div class="footer-link-right col-sm-12 col-xs-12 col-md-6 col-lg-4 ">
+            <span>
+                TEL:400-0000-000 <br>
+                企业QQ：123456789 <br>
+                微信号：XXXXXXX
+            </span>
+                <img src="img/task10-code.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        北京大美诚品包装科技有限公司Copyright ©2015
+        &nbsp;&nbsp;&nbsp;&nbsp;51baozhuang.com
+        &nbsp;&nbsp;All rights reserved.&nbsp;&nbsp;
+        京公网安备 11011502002595号
+    </div>
+
+</div>
+
+</body>
+</html>
