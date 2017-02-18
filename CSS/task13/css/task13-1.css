@@ -58,6 +58,7 @@
 .content-main-version {
     margin: 0 auto;
     width: 100%;
+    cursor: pointer;
 }
 
 .content-main-version-btn {
