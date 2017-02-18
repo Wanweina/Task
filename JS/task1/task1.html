@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>JS任务一：九宫格</title>
+    <style type="text/css">
+        .bigBox {
+            margin: 20px auto;
+            width: 320px;
+        }
+
+        .smallBox {
+            margin: 1px;
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            background-color: darkorange;
+        }
+
+        .btn {
+            margin: 0 auto;
+            width: 320px;
+        }
+
+        .btn button {
+            margin-top: 10px;
+            width: 315px;
+            height: 40px;
+            color: darkorange;
+            background-color: transparent;
+            border: 1px solid darkorange;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn button:hover {
+            background-color: darkorange;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<div class="bigBox">
+    <div class="smallBox"></div>
+    <div class="smallBox"></div>
+    <div class="smallBox"></div>
+    <div class="smallBox"></div>
+    <div class="smallBox"></div>
+    <div class="smallBox"></div>
+    <div class="smallBox"></div>
+    <div class="smallBox"></div>
+    <div class="smallBox"></div>
+</div>
+<div class="btn">
+    <button onclick="start()">开始</button>
+    <button onclick="reset()">结束</button>
+</div>
+
+<script src="task1.js"></script>
+</body>
+</html>
