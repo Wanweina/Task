@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>桌游精灵-玩家人数设置</title>
+    <link rel="stylesheet" href="css/setting.css">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+<div class="page">
+    <div class="header">
+        <!--页面头部-->
+        <div class="header-left">
+            <img src="img/setting-back.png">
+        </div>
+        <div class="header-center">
+            参数设置
+        </div>
+        <div class="header-right">
+            <img src="img/setting-help.png">
+        </div>
+    </div>
+    <div class="main">
+        <!--页面主要内容：玩家配比显示、词组、玩家人数设置-->
+        <div class="main-top">
+            <!--玩家配比显示部分-->
+            <div class="main-top-left">
+                <span>玩家配比</span>
+            </div><!--这里要去掉间隙
+            --><div class="main-top-right">
+                <ul id="identifyShow"></ul>
+                <button id="identifyGet">
+                    <span>点击设置</span>
+                    <i></i>
+                </button>
+            </div>
+        </div>
+        <div class="main-middle">
+            <!--词组部分-->
+            <div class="main-middle-part">
+                <!--要设置一个点击事件：提示简单版游戏不能设置词组-->
+                水民词组
+            </div>
+            <div class="main-middle-part">
+                幽灵词组
+            </div>
+        </div>
+        <div class="main-bottom">
+            <!--玩家人数设置部分-->
+            <p>玩家人数
+                <label for="text">
+                    <input type="text" id="text" maxlength="2" value="6">
+                    人
+                </label>
+            </p>
+            <div class="main-bottom-range">
+                <!--人数设置拖动条-->
+                <button class="btnSub" id="btnSub"></button>
+                <label for="range">
+                    <input type="range" name="range" id="range" min="6" max="18" step="1" value="6">
+                </label>
+                <button class="btnAdd" id="btnAdd"></button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <!--底部发牌按钮-->
+        <button id="gotoNext">去发牌</button>
+    </div>
+</div>
+<script src="js/setting.js"></script>
+</body>
+</html>

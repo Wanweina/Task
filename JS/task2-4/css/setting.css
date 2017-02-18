@@ -1,0 +1,266 @@
+.header-left img {
+    width: 1.5em !important;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*页面主要内容：玩家配比显示、词组、玩家人数设置*/
+.main {
+    padding: 2rem;
+    background-color: #f0f0f0;
+}
+
+/*玩家配比显示部分*/
+.main-top {
+    height: 35rem;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.main-top-left {
+    vertical-align: top;
+    display: inline-block;
+    padding: 12rem 8%;
+    width: 20%;
+    height: 100%;
+    border-right: 1px solid #d9d9d9;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 540px) {
+    .main-top-left {
+        padding: 12rem 5%;
+    }
+}
+
+.main-top-left span {
+    font-size: 2rem;
+}
+
+.main-top-right {
+    vertical-align: top;
+    display: inline-block;
+    width: 79.9%;
+    height: 100%;
+}
+
+#identifyShow {
+    margin: 0;
+    padding: 2rem 5%;
+    width: 100%;
+    height: 85%;
+    overflow: auto;
+    list-style-type: none;
+    background-color: #fbfbfb;
+}
+
+#identifyShow li {
+    display: inline-block;
+    width: 50%;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    color: #999;
+}
+
+#identifyShow li span {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 1rem;
+    padding: .5rem;
+    background-color: #fab344;
+}
+
+#identifyShow li i {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 1rem;
+    padding: .2rem;
+    background-color: #29bde0;
+}
+
+@media screen and (max-width: 540px) {
+    #identifyShow li {
+        font-size: 1.2rem;
+    }
+
+    #identifyShow li span {
+        margin: 0.5rem;
+        padding: .45rem;
+    }
+
+    #identifyShow li i {
+        margin: 0.5rem;
+        padding: .1rem;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    #identifyShow li {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    #identifyShow li span {
+        margin: 1rem;
+        padding: .45rem;
+    }
+
+    #identifyShow li i {
+        margin: 1rem;
+        padding: .3rem;
+    }
+}
+
+#identifyGet {
+    width: 100%;
+    height: 15%;
+    font-size: 1.8rem;
+    color: #29bde0;
+    background-color: #fbfbfb;
+    border: none;
+    border-top: 1px solid #d9d9d9;
+    cursor: pointer;
+}
+
+.main-top-right i {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-image: url("../img/setting-pencil.png");
+}
+
+/*词组部分*/
+.main-middle {
+    padding: 2% 5% 5% 5%;
+    background-color: #fff;
+}
+
+.main-middle-part {
+    margin-top: 3%;
+    padding: 3% 3% 6% 0;
+    font-size: 2rem;
+    color: #d7d7d7;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+/*玩家人数设置*/
+.main-bottom {
+    margin-top: 10px;
+    padding: 0.5% 5%;
+    width: 100%;
+    background-color: #fff;
+}
+
+.main-bottom p {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+}
+
+.main-bottom input {
+    width: 3.5rem;
+    margin: 0 0.8rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #fab344;
+    border: none;
+    background-color: #f4f5f5;
+}
+
+.main-bottom-range {
+    margin: 6% auto;
+    width: 100%;
+    text-align: center;
+}
+
+.main-bottom-range button {
+    border: none;
+    cursor: pointer;
+}
+
+.main-bottom-range input {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 73%;
+    height: 0.28rem;
+    vertical-align: middle;
+    background-color: #fcc671;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 62px;
+    height: 38px;
+    vertical-align: middle;
+    background-image: url("../img/setting-range.png");
+    cursor: pointer;
+}
+
+.main-bottom-range input {
+    width: 73%;
+    margin: 0 1.42rem;
+    text-align: center;
+    font-size: 28px;
+    color: #fab344;
+    background-color: #fab344;
+    border: none;
+    outline: none;
+}
+
+@media screen and (max-width: 560px) {
+    .main-bottom-range input {
+        width: 60%;
+    }
+
+    .main-bottom p {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 405px) {
+    .main-bottom-range input {
+        width: 50%;
+    }
+}
+
+.btnSub {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    background-image: url("../img/setting-subtract.png");
+}
+
+.btnAdd {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    background-image: url("../img/setting-add.png");
+}
+
+/*底部发牌按钮*/
+.footer {
+    padding: 0 2rem 1.5rem 2rem;
+    width: 100%;
+    background-color: #f0f0f0;
+}
+
+.footer button {
+    width: 100%;
+    height: 4.5rem;
+    font-size: 2rem;
+    color: white;
+    background-color: #fab344;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 0.5rem;
+}
