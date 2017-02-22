@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>桌游精灵-查看玩家身份</title>
+    <link rel="stylesheet" href="css/show.css">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+<div class="page">
+    <div class="header">
+        <!--页面顶部-->
+        <div class="header-left">
+            <img src="img/setting-back.png">
+        </div>
+        <div class="header-center">
+            查看身份
+        </div>
+        <div class="header-right">
+            <img src="img/show-close.png">
+        </div>
+    </div>
+    <div class="main">
+        <!--页面主要内容：身份牌显示区域、点击按钮-->
+        <div class="main-show">
+            <!--身份牌显示区域-->
+            <span id="playerNum">1</span>
+            <div class="main-show-cover">
+                <!--翻牌前的图片-->
+                <img src="img/show-cover.png">
+            </div>
+            <div class="main-show-open">
+                <!--翻牌后的图片-->
+                <img src="img/show-open.png">
+            </div>
+            <p id="playerRole"></p>
+            <p class="main-show-open-warn">
+                记住自己的身份，争取取得游戏胜利哦~！
+            </p>
+        </div>
+        <button id="btnShow">
+            <!--点击按钮-->
+            查看1号身份
+        </button>
+    </div>
+    <script src="../../jquery.js"></script>
+    <script src="js/show.js"></script>
+</body>
+</html>

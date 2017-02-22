@@ -95,11 +95,9 @@ identifyGet.onclick = function identifyGet() {
         } else {
             player += "<li><i></i>" + (m + 1) + "号" + "&nbsp;&nbsp;" + all[m] + "</li>";
         }
-        // player += "<li><span></span>" + (m + 1) + "号" + "&nbsp;&nbsp;" + all[m] + "</li>";
         console.log(player);
         identifyShow.innerHTML = player;//设置显示区域的html
     }
-
     allPlayer = JSON.stringify(all);//使用json把对象转换为字符串
     sessionStorage.all = allPlayer;//把字符串储存到缓存中
 };
@@ -109,7 +107,7 @@ identifyGet.onclick = function identifyGet() {
 var gotoNext = document.getElementById('gotoNext');
 gotoNext.onclick = function gotoNext() {
     if (allPlayer != null) {
-        window.location.href = "#";//已配置身份转到下一个页面
+        window.location.href = "show.html";//已配置身份转到下一个页面
     }
     else {
         alert("请点击设置身份哦")

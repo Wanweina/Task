@@ -1,9 +1,9 @@
-.header-left img {
-    width: 1.5em !important;
-}
-
 * {
     box-sizing: border-box;
+}
+
+.header-left img {
+    width: 1.5em !important;
 }
 
 /*页面主要内容：玩家配比显示、词组、玩家人数设置*/

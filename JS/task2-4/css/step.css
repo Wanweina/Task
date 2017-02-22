@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+.header-left img {
+    width: 1.5em !important;
+}
+
+/*包裹主要页面*/
+.main {
+    padding: 2rem 1rem;
+    width: 100%;
+    background-color: #f0f0f0;
+}
+
+/*主要页面内容*/
+.content {
+    overflow: hidden;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #c9c9c9;
+}
+
+/*显示天数行*/
+.content-day {
+    position: relative;
+    width: 100%;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #29bde0;
+    border-bottom: 1px solid #c9c9c9;
+}
+
+.content-day img {
+    position: absolute;
+    top: 1.9rem;
+    right: .9rem;
+}
+
+/*游戏流程部分*/
+.content-step {
+    position: relative;
+    margin-left: 2.5rem;
+    padding: 5rem 3rem;
+    width: 94%;
+    border-left: 2px solid #c9c9c9;
+}
+
+.night {
+    position: absolute;
+    top: 5.2rem;
+    left: -2rem;
+    background-color: white;
+}
+
+.sun {
+    position: absolute;
+    top: 21.2rem;
+    left: -2rem;
+    background-color: white;
+}
+
+.content-step-part {
+    position: relative;
+    margin-bottom: 2rem;
+    width: 100%;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+    color: white;
+    font-size: 1.6rem;
+    background-color: #29bde0;
+}
+
+.triangle {
+    position: absolute;
+    top: 1.45rem;
+    left: -1.48rem;
+    border: .8rem solid;
+    border-color: transparent #29bde0 transparent transparent;
+}
+
+#start {
+    margin-top: 5rem;
+    width: 100%;
+    height: 5rem;
+    font-size: 1.9rem;
+    color: white;
+    border: none;
+    background-color: #fdbc48;
+    cursor: pointer;
+}

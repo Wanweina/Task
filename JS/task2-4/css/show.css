@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+
+.header-left img {
+    width: 1.5em !important;
+}
+
+/*页面主要内容：身份牌显示区域、点击按钮*/
+.main {
+    padding: 5rem 13% 3rem 13%;
+    font-size: 2.1rem;
+    border-top: 1px solid #74d4eb;
+    background-color: #29bde0;
+}
+
+/*身份牌显示区域*/
+.main-show {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background-color: #ffedc5;
+    border: 5px solid white;
+}
+
+#playerNum {
+    position: absolute;
+    top: -2rem;
+    left: 43%;
+    width: 4rem;
+    height: 4rem;
+    line-height: 3.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #f56b81;
+    border-radius: 50%;
+    background-color: white;
+    border: 3px solid #ffedc5;
+}
+
+@media screen and (max-width: 500px) {
+    #playerNum {
+        left: 41%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    #playerNum {
+        left: 38%;
+    }
+}
+
+.main-show-cover {
+    display: inline-block;
+    margin: 25% 10%;
+}
+
+.main-show-cover img {
+    width: 100%;
+}
+
+.main-show-open {
+    display: none;
+    margin: 13% 10% 2% 10%;
+}
+
+.main-show-open img {
+    width: 90%;
+}
+
+#playerRole {
+    display: none;
+    margin: 5% auto;
+    width: 100%;
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight: bold;
+    color: #29bde0;
+}
+
+.main-show-open-warn {
+    display: none;
+    width: 100%;
+    margin: 0;
+    padding: 8% 10% 15% 10%;
+    text-align: left;
+    color: #fca000;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-top: 1px solid white;
+}
+
+@media screen and (max-width: 425px) {
+    #playerRole {
+        font-size: 2rem;
+    }
+
+    .main-show-open-warn {
+        font-size: 1.3rem;
+    }
+}
+
+/*点击按钮*/
+#btnShow {
+    margin-top: 15%;
+    width: 100%;
+    height: 4.3rem;
+    color: white;
+    font-size: 2rem;
+    background-color: #fbb435;
+    border: none;
+    cursor: pointer;
+}
