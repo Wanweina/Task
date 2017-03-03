@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>桌游精灵-黑夜解密</title>
+    <link rel="stylesheet" href="css/daytime.css">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+<div class="page">
+    <div class="header">
+        <!--投票页顶部-->
+        <a href="#">
+            <div class="header-left">
+                <img src="img/kill-header-left.png">
+            </div>
+        </a>
+        <div class="header-center">
+            黑夜解密
+        </div>
+        <a href="#">
+            <div class="header-right">
+                <img src="img/kill-header-right.png">
+            </div>
+        </a>
+    </div>
+    <div class="main">
+        <!--页面中间内容：包括播放图标、图像、死亡身份展示-->
+        <div class="main-top">
+            <img src="img/daytime-music.png" class="main-top-music">
+            <img src="img/daytime-photo.png" class="main-top-photo">
+        </div>
+        <div id="main-content">
+            <!--显示死亡玩家身份信息的区域-->
+        </div>
+    </div>
+    <div class="bottom">
+        <!--页面下部内容：游戏进程、投票按钮-->
+        <button class="bottom-step">
+            亡灵发表遗言
+        </button>
+        <img src="img/daytime-goto.png">
+        <button class="bottom-step">
+            玩家依次发言讨论
+        </button>
+        <img src="img/daytime-goto.png">
+        <button id="gotoVote">
+            去投票
+        </button>
+    </div>
+
+</div>
+<script src="../../jquery.js"></script>
+<script src="js/daytime.js"></script>
+</body>
+</html>

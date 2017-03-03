@@ -2,9 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>桌游精灵-投票页面</title>
+    <link rel="stylesheet" href="css/vote.css">
+    <link rel="stylesheet" href="css/base.css">
 </head>
 <body>
+<div class="page">
+    <div class="header">
+        <!--投票页顶部-->
+        <a href="#">
+            <div class="header-left">
+                <img src="img/kill-header-left.png">
+            </div>
+        </a>
+        <div class="header-center">
+            投票
+        </div>
+        <a href="#">
+            <div class="header-right">
+                <img src="img/kill-header-right.png">
+            </div>
+        </a>
+    </div>
+    <div class="main-top">
+        <!--注释和音频播放-->
+        <div class="main-top-word">
+            发言讨论结束，大家请投票
+            <!--音频播放-->
+            <audio src="img/kill-song.mp3" controls="controls" preload id="music" hidden></audio>
+            <button id="sing">
+                <img src="img/kill-music.png">
+            </button>
+        </div>
+        <div class="main-top-triangle"></div>
+        <p>
+            点击得票数最多的玩家
+        </p>
+    </div>
+    <div id="main-content">
+        <!--各个角色内容-->
+    </div>
 
+    <div class="footer">
+        <!--投死按钮-->
+        <button id="vote">
+            投死
+        </button>
+    </div>
+</div>
+
+
+<script src="../../jquery.js"></script>
+<script src="js/vote.js"></script>
 </body>
 </html>

@@ -108,8 +108,7 @@ var gotoNext = document.getElementById('gotoNext');
 gotoNext.onclick = function gotoNext() {
     if (allPlayer != null) {
         window.location.href = "show.html";//已配置身份转到下一个页面
-    }
-    else {
-        alert("请点击设置身份哦")
+    } else {
+        alert("请点击设置身份哦");
     }
 };

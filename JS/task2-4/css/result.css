@@ -1,0 +1,107 @@
+
+.page {
+    background-color: #29bde0;
+}
+
+/*页面主要内容样式*/
+.main {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+    border-top: 1px solid white;
+}
+
+.main-top {
+    margin: 0 auto;
+    padding: 5% 0 6% 0;
+    width: 100%;
+    text-align: center;
+}
+
+.main-top-img{
+    margin: 5% auto;
+    width: 18rem;
+    height: 10rem;
+    line-height: 3.38rem;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    background-image: url("../img/result-img.png");
+    background-size: 100%;
+
+}
+
+.main-top p {
+    margin: 0 auto;
+    padding: 0 12%;
+    text-align: left;
+    font-size: 1.2rem;
+    color: #ffc865;
+    font-weight: bold;
+}
+
+.main-middle {
+    margin: 0 auto 3% auto;
+    padding: 0 0 0 12%;
+    text-align: left;
+    font-size: 1rem;
+    color: white;
+}
+
+.main-middle p {
+    margin: 1%;
+}
+
+#main-bottom {
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 24%;
+    background-color: white;
+}
+
+.main-bottom-day {
+    padding: 0 4% 0 12%;
+    padding-bottom: 4%;
+    border-bottom: 1px solid #dddddd;
+}
+
+.main-bottom-day h3 {
+    display: inline-block;
+    margin: 2% 0;
+    width: 69%;
+    font-size: 1.15rem;
+}
+
+.main-bottom-day span {
+    font-size: 1rem;
+    color: #cecece;
+    text-align: right;
+}
+
+.main-bottom-day p {
+    margin: 0 auto;
+    color: #b1b1b1;
+    font-size: 15px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+    min-width: 330px;
+    max-width: 640px;
+    text-align: center;
+    background: rgba(41, 189, 224, 0.5);
+}
+
+.footer button {
+    margin: 3.5%;
+    padding: 3%;
+    width: 40%;
+    font-size: 1.4rem;
+    color: white;
+    border-radius: .5rem;
+    border: none;
+    cursor: pointer;
+}
