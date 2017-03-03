@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 微软雅黑 sans-serif;
+}
+
+.page {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/task5-bg.png");
+    background-size: 100% 100%;
+}
+
+.main {
+    margin: 0 auto;
+    width: 35em;
+    height: 25em;
+    background-color: #d0d3d9;
+}
+
+.main h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+    color: #03a9f4;
+}
+
+.inputBox {
+    margin: 4% auto;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    width: 80%;
+    height: 4em;
+    background-color: #fff;
+}
+
+.inputBox img {
+    display: inline-block;
+    padding: 0 4%;
+    border-right: 1px solid #e8e8e8;
+}
+
+.inputBox input {
+    padding: 0 5%;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+#check{
+    margin: 0 auto;
+    width: 55%;
+    height: 15px;
+    color: red;
+    text-align: left;
+}
+#signIn{
+    margin: 5% auto;
+    width: 80%;
+    height: 3.2em;
+    color: #fff;
+    font-size: 1.6em;
+    letter-spacing: 2px;
+    background-color: #03a9f4;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
