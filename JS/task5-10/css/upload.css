@@ -1,0 +1,78 @@
+div, p, img, button, input {
+    box-sizing: border-box;
+    font-family: 微软雅黑;
+}
+
+.uploadPage {
+    width: 100%;
+    padding-left: 260px;
+}
+
+.uploadContent {
+    width: 25rem;
+    margin: 3% auto;
+}
+
+.imgH3 {
+    color: #1d7ad9;
+}
+
+.showImg {
+    width: 25rem;
+    height: 25rem;
+}
+
+.uploadType {
+    position: relative;
+    display: block;
+    width: 20rem;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 2rem;
+    margin: 1rem auto;
+    text-align: center;
+    background-color: #1d7ad9;
+    color: white;
+    overflow: hidden;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#chooseImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer;
+}
+
+.uploadType:hover {
+    background-color: #2a6496;
+    color: white;
+    text-decoration: none
+}
+
+.uploadBtn {
+    display: block;
+    margin: 0 auto;
+    width: 20rem;
+    height: 3rem;
+    background-color: #1d7ad9;
+    font-size: 2rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.uploadBtn:hover {
+    background-color: #2a6496;
+    color: white;
+    text-decoration: none
+}
+
+.uploadPage p {
+    margin: 1rem auto;
+}
+

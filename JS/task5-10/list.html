@@ -1,0 +1,51 @@
+<div class="listPage" ng-controller="listCont">
+    <div class="content">
+        <!--整个资料显示的页面内容-->
+        <div class="content-title"><i></i>公司列表</div>
+        <div class="content-container">
+            <!--页面内容中搜索、表格和控制页面按钮-->
+            <div class="content-search">
+                <!--页面内容中搜索部分：包含下拉框，搜索按钮-->
+                <label for="financing">融资规模
+                    <select id="financing" ng-model="financingOption">
+                        <option value="">全部</option>
+                        <option ng-repeat="(x,y) in financing" ng-value="x" ng-selected="financingOption==x">{{y}}</option>
+                    </select>
+                </label>
+                <label for="industry">所在行业
+                    <select id="industry" ng-model="industryOption">
+                        <option value="">全部</option>
+                        <option ng-repeat="(x,y) in industry" ng-value="x" ng-selected="industryOption==x">{{y}}</option>
+                    </select>
+                </label>
+                <button class="search" ng-click="search()"><img src="img/refer/find.png">搜索</button>
+            </div>
+            <div class="content-table">
+                <!--页面中的表格部分：资料展示-->
+                <table>
+                    <tr>
+                        <th>公司名称</th>
+                        <th>行业</th>
+                        <th>融资规模</th>
+                        <th>认证状态</th>
+                    </tr>
+                    <tr ng-repeat="x in mes">
+                        <!--显示从后台获取的资料信息-->
+                        <td>{{x.name}}</td>
+                        <td>{{x.industryList | industry}}</td>
+                        <td>{{x.financing | finance}}</td>
+                        <td>{{x.approved | approve}}</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="content-btn">
+                <!--页面中展示页面控制按钮-->
+                <button class="firstPage" ng-click="firstPage()">首页</button>
+                <button class="prePage" ng-click="prePage()">上一页</button>
+                <input type="text" ng-blur="inputPage()" ng-model="text" maxlength="2">
+                <button class="nextPage" ng-click="nextPage()">下一页</button>
+                <button class="lastPage" ng-click="lastPage()">末页</button>
+            </div>
+        </div>
+    </div>
+</div>

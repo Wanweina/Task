@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    font-family: 微软雅黑;
+}
+
+.listPage {
+    padding: 30px 30px 100px 290px;
+    width: 100%;
+    background-color: #f5f5f5;
+}
+
+/*整个资料显示的页面内容*/
+.content {
+    width: 100%;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+}
+
+.content-title {
+    width: 100%;
+    font-size: 15px;
+    line-height: 2.9rem;
+    background-color: #fbfbfb;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.content-title i {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 6px 4px 15px;
+    width: 3px;
+    height: 14px;
+    background-color: #32c2e6;
+}
+
+/*页面内容中搜索、表格和控制页面按钮*/
+.content-container {
+    overflow: hidden;
+    padding: 15px;
+    background-color: #fff;
+}
+
+/*页面内容中搜索部分：包含下拉框，搜索按钮*/
+.content-search {
+    margin-bottom: 15px;
+    padding: 30px;
+    background-color: #f7f7f9;
+    border: 1px solid #e6e8f0;
+}
+
+.content-search label {
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+#financing, #industry {
+    margin-left: 5px;
+    width: 120px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.search {
+    margin-left: 10rem;
+    width: 90px;
+    height: 35px;
+    background-color: #01cbf1;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    letter-spacing: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search img {
+    margin-left: -.3rem;
+    margin-right: .2rem;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/*页面中的表格部分：资料展示*/
+.content-table table {
+    width: 100%;
+    border: 1px solid #e6e8f0;
+}
+
+.content-table tr {
+    height: 4rem;
+}
+
+.content-table th {
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 15px;
+    background-color: #f7f7f9;
+    border: 1px solid #e6e8f0;
+}
+
+.content-table td {
+    text-align: center;
+    border: 1px solid #e6e8f0;
+}
+
+.content-table tr:nth-child(odd) {
+    background: #f7f7f9;
+}
+
+/*页面中展示页面控制按钮*/
+.content-btn {
+    float: right;
+    margin: 20px 0;
+}
+
+.content-btn input {
+    padding: 0 0 0 11px;
+    width: 40px;
+}

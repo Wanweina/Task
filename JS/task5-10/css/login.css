@@ -24,6 +24,7 @@ body {
 }
 
 .main {
+    position: relative;
     margin: 0 auto;
     width: 35em;
     height: 25em;
@@ -39,7 +40,7 @@ body {
 }
 
 .inputBox {
-    margin: 4% auto;
+    margin: 6% auto;
     display: flex;
     display: -webkit-flex;
     align-items: center;
@@ -60,15 +61,30 @@ body {
     height: 100%;
     border: none;
 }
-#check{
+
+/*#check{*/
+.showLogin {
+    width: 100%;
+    position: absolute;
+    bottom: 15.6rem;
+}
+
+.showPwd {
+    width: 100%;
+    position: absolute;
+    bottom: 8.5rem;
+}
+
+.main p {
     margin: 0 auto;
     width: 55%;
     height: 15px;
     color: red;
     text-align: left;
 }
-#signIn{
-    margin: 5% auto;
+
+#signIn {
+    margin: 1% auto;
     width: 80%;
     height: 3.2em;
     color: #fff;

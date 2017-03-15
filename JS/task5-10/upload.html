@@ -1,0 +1,12 @@
+<!--图片上传-->
+<div class="uploadPage">
+    <div class="uploadContent" ng-controller="Upload">
+        <h3 class="imgH3">图片预览：</h3>
+        <img class="showImg" alt="请等待..." ng-src="{{imgSrc}}">
+        <a href="javascript:" class="uploadType">
+            <input type="file" id="chooseImg" file-model="myFile" multiple>选择图片
+        </a>
+        <button class="uploadBtn" ng-click="uploadImg()">上传图片</button>
+        <p>图片url地址为：<br>{{img}}</p>
+    </div>
+</div>

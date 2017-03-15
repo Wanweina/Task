@@ -1,0 +1,216 @@
+.sidenav {
+    background: #2e394c;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .3);
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    height: 100%;
+    left: 0;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    width: 260px;
+    z-index: 100;
+    text-align: center;
+    padding: 3% 0;
+}
+
+.logo {
+    margin-bottom: 10%;
+}
+
+.sidenav-brand {
+    background: #FF5722;
+    border-bottom: 1px solid #FF7043;
+    color: #FAFAFA;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    padding: 20px 24px 19px
+}
+
+.sidenav-dropdown, .sidenav-header {
+    border-bottom: 1px solid #212c3e;
+    margin: 0
+}
+
+.sidenav-header {
+    background: 0 0;
+    color: #757575;
+    font-size: 19px;
+    line-height: 32px;
+    padding: 16px 24px 15px
+}
+
+.sidenav-header small {
+    display: block;
+    font-size: 14px;
+    line-height: 16px
+}
+
+.sidenav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+.sidenav-menu li {
+    display: block;
+    position: relative
+}
+
+.sidenav-menu a {
+    background: 0 0;
+    color: #BDBDBD;
+    display: block;
+    line-height: 24px;
+    padding: 16px 32px;
+    text-decoration: none;
+}
+
+.sidenav-menu a:hover {
+    background: #212c3e;
+    color: #2ea5c5;
+}
+
+.sidenav-menu a.active, .sidenav-menu a.active .sidenav-dropdown-icon, .sidenav-menu a.active .sidenav-link-icon {
+    color: #FAFAFA
+}
+
+.sidenav-menu a.active:visited {
+    border-left: 5px solid #32c2e6;
+}
+
+.sidenav-menu a.active:hover {
+    border-left: 5px solid #32c2e6;
+}
+
+.sidenav-menu a.active:active {
+    border-left: 5px solid #32c2e6;
+}
+
+.sidenav-dropdown-icon, .sidenav-link-icon {
+    color: #757575;
+    position: absolute;
+    text-align: center;
+    top: 16px
+}
+
+.sidenav-link-icon {
+    display: block;
+    height: 24px;
+    left: 60px;
+    width: 24px
+}
+
+.sidenav-link-title {
+    display: block;
+    padding: 0 16px 0 16px
+}
+
+.sidenav-dropdown {
+    display: none;
+    list-style: none;
+    padding: 0;
+}
+
+.sidenav-dropdown a {
+    background: #2e394c;
+}
+
+.sidenav-dropdown a:hover {
+    background: #212c3e;
+    color: #03a9f4;
+}
+
+.sidenav-dropdown li:first-child a {
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .1);
+}
+
+.sidenav-dropdown-icon {
+    display: none;
+    height: 16px;
+    right: 16px;
+    width: 16px
+}
+
+.sidenav-dropdown-icon.show {
+    display: block
+}
+
+.sidenav-overlay {
+    background: rgba(255, 255, 255, .8);
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99
+}
+
+.sidenav-no-scroll {
+    overflow: hidden !important
+}
+
+header {
+    width: 100%;
+    padding: 5px 10px 5px 0;
+    text-align: right;
+    font-size: 1.2rem;
+    color: #b0bec5;
+    background-color: #fff;
+    border-bottom: 1px #d9d9d9 solid;
+    box-sizing: border-box;
+}
+
+.position {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    background-image: url(../img/refer/position.png);
+    background-size: contain;
+}
+
+header select {
+    display: inline-block;
+    margin-right: 3rem;
+    vertical-align: middle;
+    font-size: 1.2rem;
+    color: #b0bec5;
+    border: none;
+    background-color: #fff;
+    outline: none;
+    cursor: pointer;
+}
+
+.ava {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 1.6rem;
+    vertical-align: middle;
+    background-image: url(../img/refer/ava.png);
+    background-size: contain;
+}
+
+.power {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 2rem;
+    vertical-align: middle;
+    background-image: url(../img/refer/power.png);
+    background-size: contain;
+}
+
+.voice {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 2rem;
+    vertical-align: middle;
+    background-image: url(../img/refer/voice.png);
+    background-size: contain;
+}

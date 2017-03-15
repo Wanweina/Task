@@ -1,0 +1,81 @@
+<div>
+    <nav class="sidenav" data-sidenav data-sidenav-toggle="#sidenav-toggle">
+        <img src="img/refer/logo.png" class="logo">
+        <ul class="sidenav-menu">
+            <li>
+                <a href="javascript:;" data-sidenav-dropdown-toggle class="active">
+        <span class="sidenav-link-icon">
+            <i class="material-icons">store</i>
+                </span>
+                    <span class="sidenav-link-title">欢迎页</span>
+                    <span class="sidenav-dropdown-icon show" data-sidenav-dropdown-icon>
+            <i class="material-icons">arrow_drop_down</i>
+        </span>
+                    <span class="sidenav-dropdown-icon" data-sidenav-dropdown-icon>
+             <i class="material-icons">arrow_drop_up</i>
+        </span>
+                </a>
+                <ul class="sidenav-dropdown" data-sidenav-dropdown>
+                    <li><a ui-sref=".list">公司列表</a></li>
+                    <li><a ui-sref=".upload">上传图片</a></li>
+                    <li><a ui-sref=".form">新增信息</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;" data-sidenav-dropdown-toggle class="active">
+        <span class="sidenav-link-icon">
+            <i class="material-icons">shopping_cart</i>
+        </span>
+                    <span class="sidenav-link-title">水站管理</span>
+                    <span class="sidenav-dropdown-icon show" data-sidenav-dropdown-icon>
+            <i class="material-icons">arrow_drop_down</i>
+        </span>
+                    <span class="sidenav-dropdown-icon" data-sidenav-dropdown-icon>
+             <i class="material-icons">arrow_drop_up</i>
+        </span>
+                </a>
+
+                <ul class="sidenav-dropdown" data-sidenav-dropdown>
+                    <li><a href="javascript:;">北京水站管理</a></li>
+                    <li><a href="javascript:;">武汉水站管理</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;" data-sidenav-dropdown-toggle class="active">
+        <span class="sidenav-link-icon">
+            <i class="material-icons">assignment_ind</i>
+        </span>
+                    <span class="sidenav-link-title">客户管理</span>
+                    <span class="sidenav-dropdown-icon show" data-sidenav-dropdown-icon>
+            <i class="material-icons">arrow_drop_down</i>
+        </span>
+                    <span class="sidenav-dropdown-icon" data-sidenav-dropdown-icon>
+             <i class="material-icons">arrow_drop_up</i>
+        </span>
+                </a>
+
+                <ul class="sidenav-dropdown" data-sidenav-dropdown>
+                    <li><a href="javascript:;">新增客户</a></li>
+                    <li><a href="javascript:;">客户信息</a></li>
+                    <li><a href="javascript:;">客户订单</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </nav>
+    <script>$('[data-sidenav]').sidenav();</script>
+    <header>
+        <i class="position"></i>
+        <select>
+            <option>北京葡萄藤娃哈哈水站</option>
+            <option>上海葡萄藤娃哈哈水站</option>
+            <option>广州葡萄藤娃哈哈水站</option>
+            <option>深圳葡萄藤娃哈哈水站</option>
+        </select>
+        <i class="ava"></i>
+        <span>ID零零七（超级管理员）</span>
+        <a href="#"><i class="voice"></i></a>
+        <a href="#"><i class="power"></i></a>
+    </header>
+    <div ui-view=""></div>
+</div>
