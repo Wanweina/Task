@@ -6,7 +6,8 @@
                   class="form-horizontal" novalidate>
                 <div class="inputBox">
                     <img src="img/task5-user.png">
-                    <input type="text" name="userName" ng-model="userName" placeholder="用户名" maxlength="8" ng-minlength="3" required>
+                    <input type="text" name="userName" ng-model="userName" placeholder="用户名" maxlength="8"
+                           ng-minlength="3" pattern="^[A-Za-z]+$" required>
                 </div>
                 <div class="inputBox">
                     <img src="img/task5-password.png">
@@ -15,6 +16,7 @@
             </form>
             <div ng-messages="loginForm.userName.$error" class="showLogin">
                 <p ng-message="required">用户名是必须的哦</p>
+                <p ng-message="pattern">只能输入英文哦</p>
                 <p ng-message="minlength">用户名最少3位哦</p>
             </div>
             <div ng-messages="loginForm.password.$error" class="showPwd">

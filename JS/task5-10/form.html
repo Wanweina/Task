@@ -1,2 +1,228 @@
-<br><br><br><br>
-<h1 style="margin-left: 300px">我是表单页</h1>
+<!--表单页-->
+<div class="formPage" ng-app="formApp">
+    <div class="formContent" ng-controller="formCtrl">
+        <div class="form-title"><i></i>新增职位</div>
+        <div class="form-container">
+            <form name="formAdd">
+                <div class="form-part">
+                    <!--公司名称，默认-->
+                    <label for="companyName">公司名称：
+                        <input type="text"
+                               class="myText"
+                               name="companyName"
+                               id="companyName"
+                               disabled
+                               ng-model="companyName"
+                               style="cursor: not-allowed">
+                    </label>
+                </div>
+                <div class="form-part">
+                    <!--状态-->
+                    <label for="status">状&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;态：
+                        <input type="text"
+                               class="myText"
+                               name="status"
+                               id="status"
+                               disabled
+                               placeholder="上架">
+                    </label>
+                </div>
+                <div class="form-part">
+                    <!--职位名称-->
+                    <label for="professName">职位名称：
+                        <input type="text"
+                               class="myText"
+                               name="professName"
+                               id="professName"
+                               ng-model="professName"
+                               placeholder="请输入2-15位字符"
+                               ng-minlength="2"
+                               maxlength="15"
+                               ng-pattern="/^([\u4e00-\u9fa5]+|[a-zA-Z]+)$/"
+                               required>
+                    </label>
+                    <div class="formWarning" ng-messages="formAdd.professName.$error">
+                        <!--不符合要求时的提示-->
+                        <span ng-message="required">必填</span>
+                        <span ng-message="pattern">只能输入英文、中文哦</span>
+                        <span ng-message="minlength">再多写一点吧</span>
+                    </div>
+                </div>
+                <div class="form-part">
+                    <!--职位类别-->
+                    <label for="category">职位类别：
+                        <select class="mySelect"
+                                name="category"
+                                id="category"
+                                ng-model="categoryOption" required
+                                ng-change="changeSub(categoryOption)"
+                                ng-options="x.value for x in category">
+
+                        </select>
+                    </label>
+                    <div class="formWarning" ng-messages="formAdd.category.$error">
+                        <!--不符合要求时的提示-->
+                        <span ng-message="required">必填</span>
+                    </div>
+                </div>
+                <div class="form-part">
+                    <!--职位子类-->
+                    <label for="subCategory">职位子类：
+                        <select class="mySelect"
+                                name="subCategory"
+                                id="subCategory"
+                                ng-model="subCategoryOption"
+                                required
+                                ng-options="x.value for x in subCategory"></select>
+                    </label>
+                    <div class="formWarning" ng-messages="formAdd.subCategory.$error">
+                        <!--不符合要求时的提示-->
+                        <span ng-message="required">必填</span>
+                    </div>
+                </div>
+                <div class="form-part">
+                    <!--学历要求-->
+                    <label for="education">学历要求：
+                        <select class="mySelect"
+                                name="education"
+                                id="education"
+                                ng-model="educationOption"
+                                required>
+                            <option ng-repeat="(x,y) in education"
+                                    ng-value="x" ng-selected="educationOption==x">
+                                {{y}}
+                            </option>
+                        </select>
+                    </label>
+                    <div class="formWarning" ng-messages="formAdd.education.$error">
+                        <!--不符合要求时的提示-->
+                        <span ng-message="required">必填</span>
+                    </div>
+                </div>
+                <div class="form-part">
+                    <!--工作经验-->
+                    <label for="experience">工作经验：
+                        <select class="mySelect"
+                                name="experience"
+                                id="experience"
+                                ng-model="experienceOption"
+                                required>
+                            <option ng-repeat="(x,y) in experience"
+                                    ng-value="x"
+                                    ng-selected="experienceOption==x">
+                                {{y}}
+                            </option>
+                        </select>
+                    </label>
+                    <div class="formWarning" ng-messages="formAdd.experience.$error">
+                        <!--不符合要求时的提示-->
+                        <span ng-message="required">必填</span>
+                    </div>
+                </div>
+                <div class="form-part">
+                    <!--推荐类型-->
+                    <label for="recommend">推荐类型：
+                        <select class="mySelect"
+                                name="recommend"
+                                id="recommend"
+                                ng-model="recommendOption"
+                                required>
+                            <option ng-repeat="(x,y) in recommend"
+                                    ng-value="x"
+                                    ng-selected="recommendOption==x">{{y}}
+                            </option>
+                        </select>
+                    </label>
+                    <div class="formWarning" ng-messages="formAdd.recommend.$error">
+                        <!--不符合要求时的提示-->
+                        <span ng-message="required">必填</span>
+                    </div>
+                </div>
+                <div class="form-part">
+                    <!--薪资-->
+                    <label for="compensation">
+                        薪&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;资：
+                        <select class="mySelect"
+                                name="compensation"
+                                id="compensation"
+                                ng-model="compensationOption"
+                                required>
+                            <option ng-repeat="(x,y) in compensation"
+                                    ng-value="x"
+                                    ng-selected="compensationOption==x">
+                                {{y}}
+                            </option>
+                        </select>
+                    </label>
+                    <div class="formWarning" ng-messages="formAdd.compensation.$error">
+                        <!--不符合要求时的提示-->
+                        <span ng-message="required">必填</span>
+                    </div>
+                </div>
+
+                <!--三个必填的文本框：富文本-->
+                <div class="form-part">
+                    <!--岗位职责-->
+                    <label for="responsibility">岗位职责：<br>
+                        <textarea name="responsibility"
+                                  id="responsibility"
+                                  class="form-control"
+                                  ng-model="responsibilityText"
+                                  cols="72"
+                                  rows="10"
+                                  required></textarea>
+                    </label>
+                    <div class="formWarningArea" ng-messages="formAdd.responsibility.$error">
+                        <!--不符合要求时的提示-->
+                        <span ng-message="required">必填</span>
+                    </div>
+                </div>
+                <div class="form-part">
+                    <!--必要条件-->
+                    <label for="requisite">必要条件：<br>
+                        <textarea name="requisite"
+                                  id="requisite"
+                                  class="form-control"
+                                  ng-model="requisiteText"
+                                  cols="72"
+                                  rows="10"
+                                  required></textarea>
+                    </label>
+                    <div class="formWarningArea" ng-messages="formAdd.requisite.$error">
+                        <!--不符合要求时的提示-->
+                        <span ng-message="required">必填</span>
+                    </div>
+                </div>
+                <div class="form-part">
+                    <!--公司福利：富文本编辑器-->
+                    <label for="boon">公司福利：
+                        <span id="editorWarning">内容不能为空</span>
+                        <div id="boon"
+                             text-angular
+                             name="boon"
+                             ng-model="boonText"
+                             required>
+                        </div>
+                    </label>
+                    <div class="formWarningArea" ng-messages="formAdd.boon.$error">
+                        <!--不符合要求时的提示-->
+                        <span ng-message="required">必填</span>
+                    </div>
+                </div>
+                <div class="form-btn">
+                    <button type="submit"
+                            ng-disabled="formAdd.$invalid"
+                            class="btn btn-primary"
+                            ng-click="formSubmit()">
+                        添加
+                    </button>
+                    <button type="reset"
+                            class="btn btn-primary"
+                            ng-click="formReset()">
+                        重置
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

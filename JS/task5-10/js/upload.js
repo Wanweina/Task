@@ -1,10 +1,12 @@
 /* Created by Wanwn on 2017/3/15.*/
 angular.module('myApp', [])
     .directive('fileModel', ['$parse', function ($parse) {
+        //自定义指令，定义一个属性fileModle
         return {
             restrict: 'A',
             link: function (scope, element) {
                 element.bind('change', function (event) {
+                    //为一个元素绑定一个事件
                     scope.file = (event.srcElement || event.target).files[0];
                     scope.getFile();
                 });
@@ -16,30 +18,34 @@ angular.module('myApp', [])
         //这里做文件上传限制
         $scope.getFile = function () {
             fileReader.readAsDataUrl($scope.file, $scope)
+            //获取API异步读取的文件数据，另存为数据URL
+            // 将该URL绑定到img标签的src属性上，就可以实现图片的上传预览效果
                 .then(function (result) {
                     $scope.imgSrc = result;
                 });
         };
         $scope.uploadImg = function () {
-            //实列一个FotmData对象
+            //实例化一个FotmData对象
             var fd = new FormData();
             fd.append("file", $scope.file);
             //先登录再传图片至服务器
-            loginService.login({name: 'user', pwd: '123123'}).then(function (res) {
-                if (res.data.code == 0) {
-                    uploadFileService.uploadFile(fd).then(function (res) {
-                        if (res.data.code == 0) {
-                            alert("图片上传成功");
-                            $scope.img = res.data.data.url;
-                        } else {
-                            alert(res.data.message);
-                        }
-                    });
-                }
-                else {
-                    alert(res.data.message);
-                }
-            });
+            loginService.login({name: 'user', pwd: '123123'})
+                .then(function (res) {
+                    if (res.data.code == 0) {
+                        uploadFileService.uploadImg(fd)
+                            .then(function (res) {
+                                if (res.data.code == 0) {
+                                    alert("图片上传成功");
+                                    $scope.img = res.data.data.url;
+                                } else {
+                                    alert(res.data.message);
+                                }
+                            });
+                    }
+                    else {
+                        alert(res.data.message);
+                    }
+                });
 
         }
     })
@@ -82,7 +88,7 @@ angular.module('myApp', [])
     //定制图片上传服务
     .factory('uploadFileService', function ($http) {
         return {
-            uploadFile: function (formData) {
+            uploadImg: function (formData) {
                 return $http.post('/carrots-admin-ajax/a/u/img/MultipartFile', formData, {
                     withCredentials: true,
                     headers: {'Content-Type': undefined},

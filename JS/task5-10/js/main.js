@@ -1,7 +1,7 @@
 /**
  * Created by wanwn on 2017/3/9.
  */
-var app = angular.module('myApp', ['ui.router', 'oc.lazyLoad']);
+var app = angular.module('myApp', ['ui.router', 'oc.lazyLoad', 'textAngular']);
 app.config(function ($stateProvider, $urlRouterProvider) {
     //懒加载
     var _lazyLoad = function (loaded) {

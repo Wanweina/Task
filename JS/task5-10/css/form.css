@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    font-family: 微软雅黑;
+}
+
+.formPage {
+    padding: 30px 30px 100px 290px;
+    width: 100%;
+    background-color: #f5f5f5;
+}
+
+.formContent {
+    width: 100%;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+}
+
+.form-title {
+    width: 100%;
+    font-size: 15px;
+    line-height: 2.9rem;
+    background-color: #fbfbfb;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.form-title i {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 6px 4px 15px;
+    width: 3px;
+    height: 14px;
+    background-color: #32c2e6;
+}
+
+.form-container {
+    overflow: hidden;
+    padding: 15px;
+    background-color: #fff;
+}
+
+.formPage form {
+    margin-bottom: 15px;
+    padding: 30px 55px;
+    background-color: #f7f7f9;
+    border: 1px solid #e6e8f0;
+}
+
+/*每个输入部分的样式设置*/
+.form-part {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.form-part label, .editorLabel {
+    font-size: 16px;
+    margin-left: 15px;
+}
+
+.formWarning {
+    /*不符合要求时候的提示部分*/
+    padding-left: 5px;
+    width: 16rem;
+    display: inline-block;
+    color: red;
+}
+
+.myText {
+    /*文本输入框的通用样式*/
+    padding: 5px 10px;
+    width: 18rem;
+    height: 3.2rem;
+    border: 1px solid #32c2e6;
+    border-radius: 5px;
+}
+
+.mySelect {
+    /*选择框的通用样式*/
+    padding: 5px 10px;
+    width: 18rem;
+    height: 3.2rem;
+    border: 1px solid #32c2e6;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#status {
+    cursor: not-allowed;
+}
+
+#editorContent {
+    margin-left: 12px;
+}
+
+/*富文本编辑框样式*/
+#editorWarning {
+    color: red;
+    display: none
+}
+
+.formWarningArea {
+    position: absolute;
+    top: 0;
+    left: 10rem;
+    width: 5rem;
+    display: inline-block;
+    color: red;
+}
+
+#myEditor {
+    margin-left: 15px;
+}
+
+/*表单按钮样式*/
+.form-btn {
+    width: 100%;
+    text-align: center;
+}
+
+.form-btn button {
+    width: 8rem;
+    height: 4rem;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin: 5px;
+    background-color: #32c2e6;
+}
