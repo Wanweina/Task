@@ -7,6 +7,11 @@ var textNum = document.getElementById('text');//获取text的值
 var rangeNum = document.getElementById('range');//获取range的值
 var btnSub = document.getElementById('btnSub');//获取-号按钮的值
 var btnAdd = document.getElementById('btnAdd');//获取+号按钮的值
+var identifyShow = document.getElementById('identifyShow');//获取显示玩家身份区域的值
+var identifyGet = document.getElementById('identifyGet');//获取点击设置按钮的值
+var allPlayer;
+var player = "";
+var gotoNext = document.getElementById('gotoNext');
 rangeNum.onchange = function rangeChange() {
     //将range的值给text
     textNum.value = rangeNum.value;
@@ -46,10 +51,7 @@ btnAdd.onclick = function btnAdd() {
 };
 
 //玩家分配身份
-var identifyShow = document.getElementById('identifyShow');//获取显示玩家身份区域的值
-var identifyGet = document.getElementById('identifyGet');//获取点击设置按钮的值
-var allPlayer;
-var player = "";
+
 identifyGet.onclick = function identifyGet() {
     player = "";//清空显示区域的元素
     var killer = [];//杀手数组的声明
@@ -104,7 +106,7 @@ identifyGet.onclick = function identifyGet() {
 
 
 //点击分配身份按钮时先检查是否配置人员身份
-var gotoNext = document.getElementById('gotoNext');
+
 gotoNext.onclick = function gotoNext() {
     if (allPlayer != null) {
         window.location.href = "show.html";//已配置身份转到下一个页面

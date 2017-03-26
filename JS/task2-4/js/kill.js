@@ -18,6 +18,10 @@ var all = JSON.parse(allPlayer);
 var play = '';//存放玩家身份牌信息
 var oStatus = [];//存放单个玩家的生存状态的数组
 var statusAll = '';//存放所有玩家的生存状态的字符串
+var allName = document.getElementsByClassName("main-content-part-role-name");
+var x;
+var killPeople;//死亡玩家号码
+
 for (var i = 0; i < all.length; i++) {
     play += '<div class="main-content-part"><div class="main-content-part-role-name">'
         + all[i] + '</div><div class="main-content-part-role-num">' + (i + 1) + '号'
@@ -30,9 +34,7 @@ for (var i = 0; i < all.length; i++) {
     console.log(oStatus);
     $('#main-content').html(play);
 }
-var allName = document.getElementsByClassName("main-content-part-role-name");
-var x;
-var killPeople;//死亡玩家号码
+
 for (var j = 0; j < oStatus.length; j++) {
     //先把已经死亡的玩家标记出来
     if (oStatus[j].status == "killed" || oStatus[j].status == 'voted') {

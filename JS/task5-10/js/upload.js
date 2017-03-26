@@ -15,7 +15,6 @@ angular.module('myApp', [])
     }])
     //input使用file-model属性，指令file-model所在的元素绑定了change事件
     .controller('Upload', function ($scope, fileReader, $http, uploadFileService, loginService) {
-        //这里做文件上传限制
         $scope.getFile = function () {
             fileReader.readAsDataUrl($scope.file, $scope)
             //获取API异步读取的文件数据，另存为数据URL
@@ -25,7 +24,7 @@ angular.module('myApp', [])
                 });
         };
         $scope.uploadImg = function () {
-            //实例化一个FotmData对象
+            //实例化一个FormData对象
             var fd = new FormData();
             fd.append("file", $scope.file);
             //先登录再传图片至服务器
@@ -46,7 +45,6 @@ angular.module('myApp', [])
                         alert(res.data.message);
                     }
                 });
-
         }
     })
     //定制fileReader服务完成生成获取到的文件的url地址，返回到view进行预览

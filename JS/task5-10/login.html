@@ -6,12 +6,24 @@
                   class="form-horizontal" novalidate>
                 <div class="inputBox">
                     <img src="img/task5-user.png">
-                    <input type="text" name="userName" ng-model="userName" placeholder="用户名" maxlength="8"
-                           ng-minlength="3" pattern="^[A-Za-z]+$" required>
+                    <input type="text"
+                           name="userName"
+                           ng-model="userName"
+                           placeholder="用户名"
+                           maxlength="8"
+                           ng-minlength="3"
+                           pattern="^[A-Za-z]+$"
+                           required>
                 </div>
                 <div class="inputBox">
                     <img src="img/task5-password.png">
-                    <input type="password" name="password" ng-model="password" placeholder="密码" maxlength="10" ng-minlength="5" required>
+                    <input type="password"
+                           name="password"
+                           ng-model="password"
+                           placeholder="密码"
+                           maxlength="10"
+                           ng-minlength="5"
+                           required>
                 </div>
             </form>
             <div ng-messages="loginForm.userName.$error" class="showLogin">

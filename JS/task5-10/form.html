@@ -38,7 +38,7 @@
                                placeholder="请输入2-15位字符"
                                ng-minlength="2"
                                maxlength="15"
-                               ng-pattern="/^([\u4e00-\u9fa5]+|[a-zA-Z]+)$/"
+                               ng-pattern="/^[\u4e00-\u9fa5_a-zA-Z]+$/"
                                required>
                     </label>
                     <div class="formWarning" ng-messages="formAdd.professName.$error">

@@ -13,14 +13,13 @@ myApp.controller('loginCtrl', ['$scope', '$state', function ($scope, $state) {
                 }, function (value) {
                     //回调函数
                     var a = JSON.parse(value);
-                    if (a.code != 0) {
-                        alert(a.message)
+                    if (a.code == 0) {
+                        alert(a.message);
+                        $state.go('pageTab')
                     } else {
                         alert(a.message)
                     }
-                    if (a.message == 'success') {
-                        $state.go('pageTab')
-                    }
+
                 }
             )
         }

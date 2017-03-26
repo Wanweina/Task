@@ -1,9 +1,6 @@
 /**
  * Created by wanwn on 2017/2/26.
  */
-/**
- * Created by wanwn on 2017/2/24.
- */
 $('#sing').click(
     // 播放音频
     function () {
@@ -20,15 +17,17 @@ var statusAll = sessionStorage.oStatus;
 var oStatus = JSON.parse(statusAll);
 console.log(oStatus);
 var play = '';//存放玩家身份牌信息
+var allName = document.getElementsByClassName("main-content-part-role-name");
+var diePeople = 0;//存放死亡玩家人数
+var killPeople;//死亡玩家号码
+var x;
+
 for (var i = 0; i < oStatus.length; i++) {
     play += '<div class="main-content-part"><div class="main-content-part-role-name">'
         + oStatus[i].identity + '</div><div class="main-content-part-role-num">' + oStatus[i].num + '号'
         + '</div>' + '</div> ';
     $('#main-content').html(play);
 }
-var allName = document.getElementsByClassName("main-content-part-role-name");
-var diePeople = 0;//存放死亡玩家人数
-var killPeople;//死亡玩家号码
 for (var j = 0; j < oStatus.length; j++) {
     //先把已经死亡的玩家标记出来
     if (oStatus[j].status == "killed" || oStatus[j].status == 'voted') {
@@ -37,7 +36,7 @@ for (var j = 0; j < oStatus.length; j++) {
         console.log(diePeople)
     }
 }
-var x;
+
 for (x = 0; x < allName.length; x++) {
     allName[x].index = x;
     allName[x].onclick = function () {

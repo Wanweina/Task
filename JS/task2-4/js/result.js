@@ -8,6 +8,13 @@ var killer = 0;//活着的杀手人数
 var people = 0;//活着的平民人数
 var dieKiller = 0;//死亡的杀手人数
 var diePeople = 0;//死亡的平民人数
+var chineseNum = ["一", "二", "三", "四", "五", "六", "七", "八", "九", "十"]; //声明一个大写中文数字数组，用于第几天
+var a = 1;
+var b = "平民";
+var c = 1;
+var d = "平民";
+var day = 1;
+var play = '';
 for (var i = 0; i < oStatus.length; i++) {
     //计算存活和死亡的杀手人数和平民人数
     if (oStatus[i].identity == '杀手' && oStatus[i].status == 'alive') {
@@ -29,13 +36,7 @@ if (killer != 0) {
     $('.main-top').html('<div class="main-top-img"><br><br>平民胜利</div><p><strong>太棒了！你打败了杀手！在杀人游戏中取得了游戏最终的胜利哦！</strong></p>');
 }
 
-var chineseNum = ["一", "二", "三", "四", "五", "六", "七", "八", "九", "十"]; //声明一个大写中文数字数组，用于第几天
-var a = 1;
-var b = "平民";
-var c = 1;
-var d = "平民";
-var day = 1;
-var play = '';
+
 //循环生成从第一天至游戏结束的过程中，死亡玩家的死亡方式和真实身份
 for (var x = 0; x < (dieKiller + diePeople) / 2; x++) {
     for (var j = 0; j < oStatus.length; j++) {

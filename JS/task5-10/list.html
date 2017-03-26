@@ -9,16 +9,24 @@
                 <label for="financing">融资规模
                     <select id="financing" ng-model="financingOption">
                         <option value="">全部</option>
-                        <option ng-repeat="(x,y) in financing" ng-value="x" ng-selected="financingOption==x">{{y}}</option>
+                        <option ng-repeat="(x,y) in financing"
+                                ng-value="x"
+                                ng-selected="financingOption==x">{{y}}
+                        </option>
                     </select>
                 </label>
                 <label for="industry">所在行业
                     <select id="industry" ng-model="industryOption">
                         <option value="">全部</option>
-                        <option ng-repeat="(x,y) in industry" ng-value="x" ng-selected="industryOption==x">{{y}}</option>
+                        <option ng-repeat="(x,y) in industry"
+                                ng-value="x"
+                                ng-selected="industryOption==x">{{y}}
+                        </option>
                     </select>
                 </label>
-                <button class="search" ng-click="search()"><img src="img/refer/find.png">搜索</button>
+                <button class="search" ng-click="search()">
+                    <img src="img/refer/find.png">搜索
+                </button>
             </div>
             <div class="content-table">
                 <!--页面中的表格部分：资料展示-->

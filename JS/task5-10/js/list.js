@@ -2,35 +2,23 @@
  * Created by wanwn on 2017/3/12.
  */
 var app = angular.module('myApp', []);
-app.controller('listCont', function ($scope, $http, $state, $stateParams) {
+app.controller('listCont', function ($scope, $http, $state, $stateParams, financing, industry) {
     $scope.text = $stateParams.page || 1;//默认输入框为1
     $scope.page = $stateParams.page || 1;
     $scope.financingOption = $stateParams.financing || '';
     $scope.industryOption = $stateParams.industry || '';
-    $scope.financing = {
-        0: "无需融资",
-        1: "天使轮",
-        2: "A轮",
-        3: "B轮",
-        4: "C轮",
-        5: "D轮及以上",
-        6: "上市公司"
-    };
-    $scope.industry = {
-        0: "移动互联网",
-        1: "电子商务",
-        2: "企业服务",
-        3: "020",
-        4: "教育",
-        5: "金融",
-        6: "游戏"
-    };
+    $scope.financing = financing;
+    $scope.industry = industry;
     $scope.getMsg = function () {
         //发送http请求
         $http.get('/carrots-admin-ajax/a/company/search?page=' + $scope.page + '&industry=' + $scope.industryOption + '&financing=' + $scope.financingOption)
             .then(function (mes) {
+                $scope.mesAll = mes.data;
                 $scope.mes = mes.data.data;
                 $scope.total = mes.data.total;
+                if ($scope.mesAll.code != 0) {
+                    alert($scope.mesAll.message)
+                }
             })
     };
     $scope.choosePage = function () {
@@ -45,7 +33,7 @@ app.controller('listCont', function ($scope, $http, $state, $stateParams) {
             'industry': $scope.industryOption,
             'financing': $scope.financingOption
         }, {reload: true});
-        console.log($scope.industryOption,$scope.financingOption);
+        console.log($scope.industryOption, $scope.financingOption);
     };
     $scope.getMsg();
 
@@ -111,6 +99,26 @@ app.controller('listCont', function ($scope, $http, $state, $stateParams) {
 
 });
 
+
+//常量们
+app.constant('financing', {
+    0: "无需融资",
+    1: "天使轮",
+    2: "A轮",
+    3: "B轮",
+    4: "C轮",
+    5: "D轮及以上",
+    6: "上市公司"
+});
+app.constant('industry', {
+    0: "移动互联网",
+    1: "电子商务",
+    2: "企业服务",
+    3: "020",
+    4: "教育",
+    5: "金融",
+    6: "游戏"
+});
 
 //过滤器函数们
 app.filter('approve', function () {
